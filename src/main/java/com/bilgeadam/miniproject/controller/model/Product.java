@@ -6,6 +6,7 @@ public class Product {
 	private String name;
 	private String category;
 	private boolean complete;
+	private Integer status;
 
 	public Integer getId() {
 		return id;
@@ -37,6 +38,13 @@ public class Product {
 
 	public void setComplete(boolean complete) {
 		this.complete = complete;
+	}
+	public Integer getStasus() {
+		return status;
+	}
+
+	public void setStasus(Integer status) {
+		this.status = status;
 	}
 
 }

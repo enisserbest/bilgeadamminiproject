@@ -2,6 +2,7 @@ package com.bilgeadam.miniproject.service.impl;
 
 import java.lang.reflect.Type;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
@@ -16,47 +17,45 @@ import com.bilgeadam.miniproject.service.ProductService;
 @Component
 public class ProductServiceImpl implements ProductService {
 
-	@Autowired
-	ProductRepository productRepository;
+    @Autowired
+    ProductRepository productRepository;
 
-	@Autowired
-	private ModelMapper modelMapper;
+    @Autowired
+    private ModelMapper modelMapper;
 
-	@Override
-	public List<Product> getProducts() {
-		List<ProductEntity> list = productRepository.findAll();
-		Type type = new TypeToken<List<Product>>() {}.getType();
-		return modelMapper.map(list, type);
-	}
+    @Override
+    public List<Product> getProducts() {
+        List<ProductEntity> list = productRepository.findAll().stream().filter(p -> p.getStatus() != 0).collect(Collectors.toList());
+        Type type = new TypeToken<List<Product>>() {
+        }.getType();
+        return modelMapper.map(list, type);
+    }
 
-	@Override
-	public Product addProduct(Product product) {
-		return modelMapper.map(productRepository.save(modelMapper.map(product, ProductEntity.class)), Product.class);
-	}
+    @Override
+    public Product addProduct(Product product) {
+        return modelMapper.map(productRepository.save(modelMapper.map(product, ProductEntity.class)), Product.class);
+    }
 
-	@Override
-	public void deleteProduct(Integer id) {
-		productRepository.deleteById(id);
-	}
+    @Override
+    public void deleteProduct(Integer id) {
+        ProductEntity product = productRepository.getById(id);
+        product.setStatus(0);
+        productRepository.save(product);
+    }
 
-	@Override
-	public List<Product> getProducts(boolean complete) {
-		List<ProductEntity> list = productRepository.findByComplete(complete);
-		Type type = new TypeToken<List<Product>>() {}.getType();
-		return modelMapper.map(list, type);
-	}
+    @Override
+    public List<Product> getProducts(boolean complete) {
+        List<ProductEntity> list = productRepository.findByComplete(complete);
+        Type type = new TypeToken<List<Product>>() {
+        }.getType();
+        return modelMapper.map(list, type);
+    }
 
-	@Override
-	public void changeProductStatus(Integer id, String status) {
-		ProductEntity productEntity = productRepository.getById(id);
-		if (null != productEntity) {
-			if (status != null && status.equals("pending")) {
-				productEntity.setComplete(false);
-			} else {
-				productEntity.setComplete(true);
-			}
-			productRepository.save(productEntity);
-		}
-	}
+    @Override
+    public void changeProductStatus(Integer id) {
+        ProductEntity productEntity = productRepository.getById(id);
+        productRepository.save(productEntity);
+
+    }
 
 }

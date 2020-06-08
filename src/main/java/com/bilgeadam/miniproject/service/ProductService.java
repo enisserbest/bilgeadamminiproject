@@ -17,6 +17,6 @@ public interface ProductService {
 
 	List<Product> getProducts(boolean complete);
 
-	void changeProductStatus(Integer id, String status);
+	void changeProductStatus(Integer id);
 
 }

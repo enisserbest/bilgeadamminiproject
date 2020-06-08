@@ -4,12 +4,14 @@ import {HttpModule} from '@angular/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/Page/MainPage/main-page.component';
+import { MenuComponent } from './pages/Page/menu/menu/menu.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent
+    MainPageComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
