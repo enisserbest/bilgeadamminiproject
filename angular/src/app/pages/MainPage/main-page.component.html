@@ -1,17 +1,25 @@
-<<<<<<< HEAD:angular/src/app/pages/Page/MainPage/main-page.component.html
-<kendo-grid [kendoGridBinding]="products" [height]="410">
-  <kendo-grid-column  field="name" ></kendo-grid-column>
-  <kendo-grid-column  field="category"></kendo-grid-column>
-  <kendo-grid-column  field="complete"></kendo-grid-column>
-</kendo-grid>
-=======
-<div>
-  <ul>
-    <li *ngFor="let product of products">
-      {{product.name}}
-    </li>
-  </ul>
-</div>
+<kendo-grid [kendoGridBinding]="products" (add)="addAppParameter()" (edit)="editAppParameter($event)"
+  (remove)="openRemoveDialog($event)" [sortable]="true" [filterable]="false" [groupable]="false" [resizable]="true">
 
-<h1>Ürünler</h1>
->>>>>>> 26ff1d7e6c77e23fa91ece933d25d44388c2ed49:angular/src/app/pages/MainPage/main-page.component.html
+  <ng-template kendoGridToolbarTemplate>
+    <button class="ngtof-btn ngtof-btn-default" kendoGridAddCommand>
+      <span title="Olustur" class="glyphicon glyphicon-plus-sign" [ngStyle]="{'top': '0px', 'padding': '0 3px'}">
+      </span>
+      Yeni
+    </button>
+  </ng-template>
+  <kendo-grid-column field="name" title="Name" width="65"></kendo-grid-column>
+  <kendo-grid-column field="category" title="Caategory" width="65"></kendo-grid-column>
+  <kendo-grid-column field="complete" title="Status" width="65"></kendo-grid-column>
+  <kendo-grid-command-column width="65" title="Options" media="sm">
+    <ng-template kendoGridCellTemplate>
+      <button kendoGridEditCommand [primary]="true">Edit</button>
+      <button kendoGridRemoveCommand>Delete</button>
+    </ng-template>
+  </kendo-grid-command-column>
+</kendo-grid>
+
+
+<app-add-product [model]="editDataItem" [isNew]="isNew" (save)="saveAppParameter($event)"
+  (cancel)="cancel()">
+</app-add-product>
