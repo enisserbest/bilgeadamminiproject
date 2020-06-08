@@ -23,7 +23,7 @@ public class ProductController {
 	ProductService productService;
 
 	@GetMapping
-	public List<Product> getTodoItems(@RequestParam(required = false) Boolean complete) {
+	public List<Product> getProducts(@RequestParam(required = false) Boolean complete) {
 		if (null == complete) {
 			return productService.getProducts();
 		} else {
