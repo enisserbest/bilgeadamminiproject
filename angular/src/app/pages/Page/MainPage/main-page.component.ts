@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http'; //Adım 2
-import { Product } from './products';
 import { DataService } from 'src/app/service/data.service';
+import { Product } from '../Models/products';
 
 @Component({
   selector: 'app-main-page',

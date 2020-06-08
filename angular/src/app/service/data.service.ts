@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Product } from '../pages/main-page/products';
 import { map, catchError, tap } from "rxjs/operators"; 
 import { Http, Response } from '@angular/http';
+import { Product } from '../pages/Page/Models/products';
 @Injectable({
   providedIn: 'root'
 })
