@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getProducts() {
-        List<ProductEntity> list = productRepository.findAll().stream().filter(p -> p.getStatus() != 0).collect(Collectors.toList());
+        List<ProductEntity> list = productRepository.findAll().stream().filter(p -> p.getStatus() == 1).collect(Collectors.toList());
         Type type = new TypeToken<List<Product>>() {
         }.getType();
         return modelMapper.map(list, type);
@@ -33,6 +33,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product addProduct(Product product) {
+        product.setStasus(1);
         return modelMapper.map(productRepository.save(modelMapper.map(product, ProductEntity.class)), Product.class);
     }
 

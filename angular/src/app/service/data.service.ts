@@ -10,9 +10,18 @@ export class DataService {
 
   constructor(private http: Http) { }
   
-  getProduct(): Observable<Product[]> { //Adım 5 
+  getProduct(): Observable<Product[]> {  
     return this.http.get("api/getProducts")
       .pipe(map(Response => Response.json()))
+  }
+
+
+  public addProduct(product: Product) {
+    return this.http.post( "api/addProduct", product);
+  }
+
+  public deleteProduct(product: Product) {
+    return this.http.post( "api/deleteProduct", product);
   }
   
 }

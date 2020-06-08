@@ -19,39 +19,33 @@ import com.bilgeadam.miniproject.service.ProductService;
 @RequestMapping("/api")
 public class ProductController {
 
-	@Autowired
-	ProductService productService;
+    @Autowired
+    ProductService productService;
 
 
-	@RequestMapping("/getProducts")
-	@GetMapping
-	public List<Product> getProducts() {
-		Product product = new Product();
-		product.setCategory("test");
-		product.setName("deneme");		
-		addProduct(product);
-			return productService.getProducts();
-	}
+    @RequestMapping("/getProducts")
+    @GetMapping
+    public List<Product> getProducts() {
+        return productService.getProducts();
+    }
 
-	@RequestMapping("/addProduct")
-	@PostMapping
-	public Product addProduct(@RequestBody Product product) {
+    @RequestMapping("/addProduct")
+    @PostMapping
+    public Product addProduct(@RequestBody Product product) {
+        return productService.addProduct(product);
+    }
 
-
-		return productService.addProduct(product);
-	}
-
-	@RequestMapping("/deleteProduct")
-	@PostMapping
-	public void deleteProduct(@RequestBody Integer id) {
-		productService.deleteProduct(id);
-	}
+    @RequestMapping("/deleteProduct")
+    @PostMapping
+    public void deleteProduct(@RequestBody Product product) {
+        productService.deleteProduct(product.getId());
+    }
 
 
-	@RequestMapping("/changeProductStatus")
-	@PostMapping
-	public void changeProductStatus(@RequestBody Integer id) {
-		productService.changeProductStatus(id);
-	}
+    @RequestMapping("/changeProductStatus")
+    @PostMapping
+    public void changeProductStatus(@RequestBody Integer id) {
+        productService.changeProductStatus(id);
+    }
 
 }

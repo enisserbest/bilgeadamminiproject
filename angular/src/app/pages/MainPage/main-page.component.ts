@@ -4,7 +4,6 @@ import { DataService } from 'src/app/service/data.service';
 import { Product } from '../Models/products';
 import { Observable } from 'rxjs';
 import { GridDataResult } from '@progress/kendo-angular-grid';
-
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
@@ -49,23 +48,22 @@ export class MainPageComponent implements OnInit {
     this.editDataItem = undefined;
   }
   public dialogFn: Function;
-  
 
-  public saveAppParameter(data:any) {
 
+  public saveAppParameter(data: any) {
+    this.dataService.addProduct(data).subscribe(data => {
+      console.log("save başarılı");
+      this.getProduct();
+
+    })
   }
 
-  public removeAppParameter(data:any) {
-
-    
+  public removeAppParameter(data: any) {
+    this.dataService.deleteProduct(data.dataItem).subscribe(data => {
+      console.log("silme işlemi başarılı");
+      this.getProduct();
+    })
   }
-
-  public openRemoveDialog({ dataItem }) {
-    this.openedDialog = true;
-    this.removedDataItem = dataItem;
-    this.dialogFn = this.removeAppParameter;
-  }
-
 }
 
 

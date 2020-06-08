@@ -19,6 +19,7 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
     FormsModule,
     ReactiveFormsModule,
     DateInputsModule,
-    InputsModule
+    InputsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

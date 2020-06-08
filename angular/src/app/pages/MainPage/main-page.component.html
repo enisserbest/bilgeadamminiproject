@@ -1,5 +1,5 @@
 <kendo-grid [kendoGridBinding]="products" (add)="addAppParameter()" (edit)="editAppParameter($event)"
-  (remove)="openRemoveDialog($event)" [sortable]="true" [filterable]="false" [groupable]="false" [resizable]="true">
+  (remove)="removeAppParameter($event)" [sortable]="true" [filterable]="false" [groupable]="false" [resizable]="true">
 
   <ng-template kendoGridToolbarTemplate>
     <button class="ngtof-btn ngtof-btn-default" kendoGridAddCommand>
