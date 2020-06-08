@@ -28,7 +28,7 @@ public class ProductController {
 	public List<Product> getProducts() {
 		Product product = new Product();
 		product.setCategory("test");
-		product.setName("deneme");
+		product.setName("deneme");		
 		addProduct(product);
 			return productService.getProducts();
 	}

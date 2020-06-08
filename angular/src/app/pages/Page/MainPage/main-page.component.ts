@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Http } from '@angular/http'; //Adım 2
+import { Http } from '@angular/http';
 import { DataService } from 'src/app/service/data.service';
 import { Product } from '../Models/products';
 
