@@ -1,35 +1,31 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Http, Response } from '@angular/http'; //Adım 2
+import { Http } from '@angular/http'; //Adım 2
 import { Product } from './products';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  styleUrls: ['./main-page.component.css'],
+  providers: [DataService]
 })
 export class MainPageComponent implements OnInit {
 
-  constructor(private http:Http) { }
+  constructor(private http: Http, private dataService: DataService) { }
 
-  ngOnInit(): void {
-    this.getAllData();
+  ngOnInit() {
+    this.getProduct();
   }
+
   products: Product[];
-  public getAllData() {
-    this.http.get("api/getProducts", {
-    }).subscribe((data: any) => {
-        this.products =JSON.parse(data._body)
-        console.log(this.products);
-        
-       
-        
-        
-        
 
-    }, error => {
-    });
+
+  getProduct() {
+    this.dataService.getProduct().subscribe(response => {
+      this.products = response
+    })
+  }
 }
 
 
-}
+
