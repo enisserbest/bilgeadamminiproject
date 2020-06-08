@@ -19079,6 +19079,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
     /*! C:\Users\enis.serbest\Desktop\miniproject\angular\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
+    /*! C:\Users\burak.acar\Desktop\New folder\bilgeadamminiproject\angular\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */
     "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
 
     __webpack_require__(
@@ -19087,6 +19088,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     module.exports = __webpack_require__(
     /*! C:\Users\enis.serbest\Desktop\miniproject\angular\src\polyfills.ts */
+    /*! C:\Users\burak.acar\Desktop\New folder\bilgeadamminiproject\angular\src\polyfills.ts */
     "./src/polyfills.ts");
     /***/
   }
