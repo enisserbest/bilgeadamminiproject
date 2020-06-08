@@ -54,7 +54,7 @@
     	}
     	
     	$.ajax({
-            url: 'http://localhost:8010/products',
+            url: 'http://localhost:8010/api',
           
             type: 'GET',
             contentType: "application/json",
@@ -81,7 +81,7 @@
     	
         
          $.ajax({
-                url: 'http://localhost:8010/products',
+                url: 'http://localhost:8010/api',
               
                 type: 'GET',
                 contentType: "application/json",
@@ -162,7 +162,7 @@
     function deleteProduct(deleteId) {
     	$.ajax({
             type: 'delete',
-            url: 'http://localhost:8010/products/'+deleteId,
+            url: 'http://localhost:8010/api/'+deleteId,
             contentType: "application/json; charset=utf-8",
             traditional: true,
             success: function (data) {
@@ -176,9 +176,9 @@
     function changeProductStatus(changeStatusId, status) {
     	var urlString = '';
     	if(status == true){
-    		urlString = 'http://localhost:8010/products/product/id/'+changeStatusId+'/status/pending';
+    		urlString = 'http://localhost:8010/api/product/id/'+changeStatusId+'/status/pending';
     	}else{
-    		urlString = 'http://localhost:8010/products/product/id/'+changeStatusId+'/status/complete';
+    		urlString = 'http://localhost:8010/api/product/id/'+changeStatusId+'/status/complete';
     	}
 
     	$.ajax({

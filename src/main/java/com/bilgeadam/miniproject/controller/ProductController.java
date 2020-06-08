@@ -16,19 +16,17 @@ import com.bilgeadam.miniproject.controller.model.Product;
 import com.bilgeadam.miniproject.service.ProductService;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api")
 public class ProductController {
 
 	@Autowired
 	ProductService productService;
 
+
+	@RequestMapping("/getProducts")
 	@GetMapping
-	public List<Product> getProducts(@RequestParam(required = false) Boolean complete) {
-		if (null == complete) {
+	public List<Product> getProducts() {
 			return productService.getProducts();
-		} else {
-			return productService.getProducts(complete);
-		}
 	}
 
 	@PostMapping
