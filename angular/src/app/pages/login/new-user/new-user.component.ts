@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { User } from '../../Models/login';
+import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-new-user',
@@ -9,7 +11,6 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class NewUserComponent implements OnInit {
 
   public newUserActive = false;
-
   public newUserForm: FormGroup = new FormGroup({
     'name': new FormControl('', Validators.required),
     'surname': new FormControl('', Validators.required),
@@ -18,22 +19,30 @@ export class NewUserComponent implements OnInit {
     'category': new FormControl('', Validators.required),
   });
 
-  constructor() { }
+  constructor(private dataService: DataService) {
+    setInterval(() => {
+      this.newUserActive = this.dataService.newUser;
+      
+    }, 500);
+   }
+
 
   ngOnInit(): void {
   }
 
-  public onCancel(data){
-    this.newUserActive = false
+  public onSave(){
+    this.dataService.saveUser(this.newUserForm.value).subscribe(response =>{
+      console.log("user kaydı başarılı");
+      
+    })
   }
 
-  public onSave(data){
-
+  public onCancel(){
+    this.dataService.newUser =false;
   }
 
   public closeForm(){
-    this.newUserActive = false
+    this.dataService.newUser =false;
 
   }
-
 }

@@ -56,20 +56,19 @@
         </div>
         <div class="col-sm-10">
             <select id="category" class="form-control" formControlName="category">
-                <option value="">Seçiniz</option>
+                <option value="">Teknoloji</option>
+                <option value="">Bilim</option>
+                <option value="">Tarih</option>
+                <option value="">Sanat</option>
+                <option value="">Felsefe</option>
             </select>
-            <!--<option *ngFor="let item of itemList" [value]="item">{{item}}</option>-->
-            <span class="k-tooltip k-tooltip-validation"
-                [hidden]="newUserForm.get('category').valid || newUserForm.get('category').pristine">
-                Kategori Seçiniz!
-            </span>
         </div>
 
         <div class="row">
             <div class="col-sm-12">
-                <button type="button" class="float-right btn btn-outline-success" [disabled]="!newUserForm.valid"
-                    (click)="onSave($event)">Kaydet</button>
-                <button class="float-right btn btn-outline-danger" (click)="onCancel($event)">İptal</button>
+                <button type="button" class="float-right btn btn-outline-success"
+                    (click)="onSave()">Kaydet</button>
+                <button class="float-right btn btn-outline-danger" (click)="onCancel()">İptal</button>
 
             </div>
         </div>

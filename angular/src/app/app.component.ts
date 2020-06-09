@@ -7,16 +7,15 @@ import { DataService } from './service/data.service';
   styleUrls: ['./app.component.css']
 })
 
-
-
 export class AppComponent {
   public active:boolean =false
   public loginActive:boolean = true;
-
+  public newUserActive: boolean =false;
   constructor(private dataService: DataService) { 
 
     setInterval(() => {
       this.active = this.dataService.userControl;
+      this.newUserActive = this.dataService.newUser;
       if(this.active==true){
         this.loginActive=false
       }

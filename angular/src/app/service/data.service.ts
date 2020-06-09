@@ -10,6 +10,7 @@ import { User } from '../pages/Models/login';
 export class DataService {
 
   public userControl:boolean = false;
+  public newUser: boolean =false;
   constructor(private http: Http) { }
   
   getProduct(): Observable<Product[]> {  
@@ -27,7 +28,11 @@ export class DataService {
   }
   
   public loginUser(user: User) {
-    return this.http.post( "api/loginControl", user);
+    return this.http.post("api/loginUser", user);
+  }
+
+  public saveUser(user: User) {
+    return this.http.post("api/saveUser", user);
   }
 
 

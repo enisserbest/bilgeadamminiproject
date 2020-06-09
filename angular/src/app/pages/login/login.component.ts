@@ -15,21 +15,27 @@ export class LoginComponent implements OnInit {
     'password': new FormControl('', Validators.required),
   });
 
+  public isNew:boolean = false;
+
   constructor(private dataService:DataService) { }
-  public user: User = null;
+  //public user: User = new User();
   ngOnInit(): void {
 
   }
 
   public giris(){
-    this.user.username = this.loginForm.value.username;
-    this.user.password = this.loginForm.value.password;
-    this.dataService.loginUser(this.user).subscribe(response => {
-      if(response){
+    var user= new User();
+    user.username = this.loginForm.value.username;
+    user.password = this.loginForm.value.password;
+    this.dataService.loginUser(user).subscribe(response => {     
+      if(response.json()){
         this.dataService.userControl=true;
+        this.dataService.newUser=false;
       }
+      
     })
-
-
+  }
+  public newUser(){
+    this.dataService.newUser =true
   }
 }

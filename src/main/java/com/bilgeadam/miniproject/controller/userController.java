@@ -24,4 +24,10 @@ public class userController {
     }
 
 
+    @RequestMapping("/saveUser")
+    @PostMapping
+    public void saveUser(@RequestBody User user) {
+        userSevice.addUser(user);
+    }
+
 }

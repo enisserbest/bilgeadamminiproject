@@ -18,7 +18,7 @@ public class UserSeviceImpl implements UserService {
 
 	@Override
 	public boolean loginUser(User user) {
-		User userControl = userRepository.getByUsername(user.getUsername());
+		User userControl = userRepository.getByUsernameAndPassword(user.getUsername(), user.getPassword());
 		if (userControl != null) {
 			return true;
 		} else {
@@ -29,6 +29,6 @@ public class UserSeviceImpl implements UserService {
 
 	@Override
 	public void addUser(User user) {
-
+		userRepository.save(user);
 	}
 }
