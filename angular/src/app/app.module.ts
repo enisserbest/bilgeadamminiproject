@@ -14,11 +14,9 @@ import { DialogsModule } from '@progress/kendo-angular-dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { InputsModule } from '@progress/kendo-angular-inputs';
-
-
-
-
-
+import { LoginComponent } from './pages/login/login.component';
+import { NewUserComponent } from './pages/login/new-user/new-user.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -28,6 +26,8 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
     ProductsComponent,
     UsersComponent,
     AddProductComponent,
+    LoginComponent,
+    NewUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,9 +42,9 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
     ReactiveFormsModule,
     DateInputsModule,
     InputsModule,
-    
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

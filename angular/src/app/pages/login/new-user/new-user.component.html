@@ -1,0 +1,77 @@
+<kendo-dialog *ngIf="newUserActive" (close)="closeForm()">
+    <kendo-dialog-titlebar>
+        Yeni Kullanıcı Kayıdı
+    </kendo-dialog-titlebar>
+
+    <form [formGroup]="newUserForm">
+        <div class="col-sm-12">
+
+            <div class="col-sm-2">
+                <label for="name" class="control-label">Ad :</label>
+            </div>
+            <div class="col-sm-3">
+                <input id="name" type="text" class="form-control" formControlName="name" />
+                <span class="k-tooltip k-tooltip-validation"
+                    [hidden]="newUserForm.get('name').valid || newUserForm.get('name').pristine">
+                    Kullanıcı Adı Giriniz!
+                </span>
+            </div>
+
+            <div class="col-sm-2">
+                <label for="surname" class="control-label">Soyad :</label>
+            </div>
+            <div class="col-sm-3">
+                <input id="surname" type="text" class="form-control" formControlName="surname" />
+                <span class="k-tooltip k-tooltip-validation"
+                    [hidden]="newUserForm.get('surname').valid || newUserForm.get('surname').pristine">
+                    Kullanıcı Adı Giriniz!
+                </span>
+            </div>
+
+            <div class="col-sm-2">
+                <label for="username" class="control-label">Kullanıcı Adı</label>
+            </div>
+            <div class="col-sm-3">
+                <input id="username" type="text" class="form-control" formControlName="username" />
+                <span class="k-tooltip k-tooltip-validation"
+                    [hidden]="newUserForm.get('username').valid || newUserForm.get('username').pristine">
+                    Kullanıcı Adı Giriniz!
+                </span>
+            </div>
+
+            <div class="col-sm-2">
+                <label for="password" class="control-label">Şifre</label>
+            </div>
+            <div class="col-sm-3">
+                <input id="password" type="password" class="form-control" formControlName="password" />
+                <span class="k-tooltip k-tooltip-validation"
+                    [hidden]="newUserForm.get('password').valid || newUserForm.get('password').pristine">
+                    Şifre giriniz!
+                </span>
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <label for="category" class="control-label">Kategori</label>
+        </div>
+        <div class="col-sm-3">
+            <select id="category" class="form-control" formControlName="category">
+                <option value="">Seçiniz</option>
+            </select>
+            <!--<option *ngFor="let item of itemList" [value]="item">{{item}}</option>-->
+            <span class="k-tooltip k-tooltip-validation"
+                [hidden]="newUserForm.get('category').valid || newUserForm.get('category').pristine">
+                Name is required
+            </span>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <button type="button" class="float-right btn btn-outline-success" [disabled]="!newUserForm.valid"
+                    (click)="onSave($event)">Kaydet</button>
+                <button class="float-right btn btn-outline-danger" (click)="onCancel($event)">İptal</button>
+
+            </div>
+        </div>
+    </form>
+</kendo-dialog>

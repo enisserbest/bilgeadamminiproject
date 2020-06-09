@@ -1,0 +1,15 @@
+button.btn.btn-light.float-right {
+    margin-right: 1%;
+    margin-top: 3%;
+}
+
+.btn-primary:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    margin-top: 3%;
+}
+
+button.btn.btn-primary.float-right {
+    margin-top: 3%;
+}
