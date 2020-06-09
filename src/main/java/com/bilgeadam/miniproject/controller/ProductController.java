@@ -41,7 +41,6 @@ public class ProductController {
         productService.deleteProduct(product.getId());
     }
 
-
     @RequestMapping("/changeProductStatus")
     @PostMapping
     public void changeProductStatus(@RequestBody Integer id) {

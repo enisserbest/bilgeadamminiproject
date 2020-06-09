@@ -8,7 +8,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class NewUserComponent implements OnInit {
 
-  public newUserActive = true;
+  public newUserActive = false;
 
   public newUserForm: FormGroup = new FormGroup({
     'name': new FormControl('', Validators.required),
@@ -21,6 +21,19 @@ export class NewUserComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public onCancel(data){
+    this.newUserActive = false
+  }
+
+  public onSave(data){
+
+  }
+
+  public closeForm(){
+    this.newUserActive = false
+
   }
 
 }

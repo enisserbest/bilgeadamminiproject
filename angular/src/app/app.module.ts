@@ -16,7 +16,7 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { LoginComponent } from './pages/login/login.component';
 import { NewUserComponent } from './pages/login/new-user/new-user.component';
-import { MatDialogModule } from '@angular/material/dialog';
+
 
 @NgModule({
   declarations: [
@@ -41,8 +41,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     ReactiveFormsModule,
     DateInputsModule,
-    InputsModule,
-    MatDialogModule
+    InputsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
