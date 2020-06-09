@@ -19,7 +19,7 @@ public class userController {
 
     @RequestMapping("/loginUser")
     @PostMapping
-    public boolean loginUser(@RequestBody User user) {
+    public User loginUser(@RequestBody User user) {
         return userSevice.loginUser(user);
     }
 

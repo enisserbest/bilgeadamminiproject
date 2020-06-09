@@ -28,9 +28,12 @@ export class LoginComponent implements OnInit {
     user.username = this.loginForm.value.username;
     user.password = this.loginForm.value.password;
     this.dataService.loginUser(user).subscribe(response => {     
-      if(response.json()){
+      if(response.json()!=null){
         this.dataService.userControl=true;
         this.dataService.newUser=false;
+        this.dataService.user = response.json();
+        console.log(this.dataService.user);
+        
       }
       
     })

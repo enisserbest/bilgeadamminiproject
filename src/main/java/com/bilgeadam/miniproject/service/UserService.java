@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public interface UserService {
 
-	boolean loginUser(User user);
+	User loginUser(User user);
 
 	void addUser(User user);
 

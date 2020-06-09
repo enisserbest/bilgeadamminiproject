@@ -11,6 +11,7 @@ export class DataService {
 
   public userControl:boolean = false;
   public newUser: boolean =false;
+  public user: User
   constructor(private http: Http) { }
   
   getProduct(): Observable<Product[]> {  

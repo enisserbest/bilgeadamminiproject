@@ -17,12 +17,12 @@ public class UserSeviceImpl implements UserService {
 	private ModelMapper modelMapper;
 
 	@Override
-	public boolean loginUser(User user) {
+	public User loginUser(User user) {
 		User userControl = userRepository.getByUsernameAndPassword(user.getUsername(), user.getPassword());
 		if (userControl != null) {
-			return true;
+			return userControl;
 		} else {
-			return false;
+			return null;
 		}
 
 	}
