@@ -5,30 +5,30 @@ import com.bilgeadam.miniproject.repository.UserRepository;
 import com.bilgeadam.miniproject.service.UserService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserSeviceImpl implements UserService {
 
-    @Autowired
-    UserRepository userRepository;
+	@Autowired
+	UserRepository userRepository;
 
+	@Autowired
+	private ModelMapper modelMapper;
 
-    @Autowired
-    private ModelMapper modelMapper;
+	@Override
+	public boolean loginUser(User user) {
+		User userControl = userRepository.getByUsername(user.getUsername());
+		if (userControl != null) {
+			return true;
+		} else {
+			return false;
+		}
 
-    @Override
-    public boolean loginUser(User user) {
-        User userControl = userRepository.getByUsername(user.getUsername());
-        if(userControl!= null){
-            return true;
-        }else{
-            return false;
-        }
+	}
 
+	@Override
+	public void addUser(User user) {
 
-    }
-
-    @Override
-    public void addUser(User user) {
-
-    }
+	}
 }
