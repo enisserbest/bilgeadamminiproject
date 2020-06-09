@@ -27,7 +27,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     UsersComponent,
     AddProductComponent,
     LoginComponent,
-    NewUserComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,

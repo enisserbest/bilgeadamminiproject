@@ -10,7 +10,7 @@ export class NewUserComponent implements OnInit {
 
   public newUserActive = true;
 
-  public loginForm: FormGroup = new FormGroup({
+  public newUserForm: FormGroup = new FormGroup({
     'name': new FormControl('', Validators.required),
     'surname': new FormControl('', Validators.required),
     'username': new FormControl('', Validators.required),
