@@ -11,9 +11,6 @@ import javax.persistence.Id;
 public class ProductEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	public  ProductEntity(){
-		status=1;
-	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

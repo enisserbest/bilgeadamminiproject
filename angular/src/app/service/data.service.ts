@@ -3,11 +3,13 @@ import { Observable } from 'rxjs';
 import { map, catchError, tap } from "rxjs/operators";
 import { Http, Response } from '@angular/http';
 import { Product } from '../pages/Models/products';
+import { User } from '../pages/Models/login';
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
+  public userControl:boolean = false;
   constructor(private http: Http) { }
   
   getProduct(): Observable<Product[]> {  
@@ -24,6 +26,11 @@ export class DataService {
     return this.http.post( "api/deleteProduct", product);
   }
   
+  public loginUser(user: User) {
+    return this.http.post( "api/loginControl", user);
+  }
+
+
 }
 
 

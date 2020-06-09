@@ -1,4 +1,4 @@
-<div class="col">
+<div *ngIf="active" class="col">
     <div class="row">
         <div class="col-3">
             <app-menu></app-menu>
@@ -8,4 +8,10 @@
             <app-new-user></app-new-user>
         </div>
     </div>
+</div>
+
+<div *ngIf="loginActive" class="col-12" class="col">
+
+    <app-login></app-login>
+
 </div>

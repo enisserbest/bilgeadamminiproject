@@ -27,13 +27,11 @@ export class AddProductComponent implements OnInit {
   @Output() save: EventEmitter<Product> = new EventEmitter();
 
   public onSave(e): void {
-    e.preventDefault();
     this.save.emit(this.editForm.value);
     this.active = false;
   }
 
   public onCancel(e): void {
-    e.preventDefault();
     this.closeForm();
   }
 
