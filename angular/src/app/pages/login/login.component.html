@@ -1,36 +1,40 @@
-<form [formGroup]="loginForm">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="col-sm-2">
-                <label for="username" class="control-label">Kullanıcı Adı</label>
-            </div>
-            <div class="col-sm-3">
-                <input id="username" type="text" class="form-control" formControlName="username" />
-                <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="loginForm.get('username').valid || loginForm.get('username').pristine">
-                    Kullanıcı Adı Giriniz!
-                </span>
-            </div>
+<div class="container">
+    <form [formGroup]="loginForm">
+        <div class="row">
+            <img src="../../../assets/image/ba.jpg" width="500" height="333">
+            <div class="col-sm-12">
+                <div class="col-sm-2">
+                    <label for="username" class="control-label">Kullanıcı Adı : </label>
+                </div>
+                <div class="col-sm-4">
+                    <input id="username" type="text" class="form-control" formControlName="username" />
+                    <span class="k-tooltip k-tooltip-validation"
+                        [hidden]="loginForm.get('username').valid || loginForm.get('username').pristine">
+                        Kullanıcı Adı Giriniz!
+                    </span>
+                </div>
 
+                <div class="col-sm-2" id="password">
+                    <label for="password" class="control-label">Şifre : </label>
+                </div>
+                <div class="col-sm-4">
+                    <input id="password" type="password" class="form-control" formControlName="password" />
+                    <span class="k-tooltip k-tooltip-validation"
+                        [hidden]="loginForm.get('password').valid || loginForm.get('password').pristine">
+                        Şifre giriniz!
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="buttons">
             <div class="col-sm-2">
-                <label for="password" class="control-label">Şifre</label>
-            </div>
-            <div class="col-sm-3">
-                <input id="password" type="password" class="form-control" formControlName="password" />
-                <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="loginForm.get('password').valid || loginForm.get('password').pristine">
-                    Şifre giriniz!
-                </span>
+                <button class="btn btn-primary float-right" type="button" [disabled]="!loginForm.valid "
+                    (click)="giris()">Giriş
+                </button>
+                <button class="btn btn-light float-right" type="button" (click)="newUser()">
+                    Yeni Kullanıcı
+                </button>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2">
-            <button class="btn btn-primary float-right" type="button"  [disabled]="!loginForm.valid " (click)="giris()" >Giriş
-            </button>
-            <button class="btn btn-light float-right" type="button" (click)="newUser()">
-                Yeni Kullanıcı
-            </button>
-        </div>
-    </div>
-</form>
+    </form>
+</div>

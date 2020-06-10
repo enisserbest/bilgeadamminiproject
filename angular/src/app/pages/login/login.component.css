@@ -1,6 +1,6 @@
 button.btn.btn-light.float-right {
-    margin-right: 1%;
-    margin-top: 3%;
+    margin-right: 303%;
+    margin-top: -104%;
 }
 
 .btn-primary:disabled {
@@ -12,4 +12,22 @@ button.btn.btn-light.float-right {
 
 button.btn.btn-primary.float-right {
     margin-top: 3%;
+    margin-right: 114%;
+}
+
+.col-sm-12 {
+    margin-left: 34%;
+}
+
+div#buttons {
+    margin-left: 66%;
+    margin-top: 2%;
+}
+
+div#password {
+    margin-top: 12px;
+}
+
+img {
+    margin-left: 29%;
 }
