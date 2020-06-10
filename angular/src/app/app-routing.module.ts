@@ -1,8 +1,8 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { UsersComponent } from './pages/users/users.component';
 import { MenuComponent } from './pages/menu/menu/menu.component';
 import { MainPageComponent } from './pages/MainPage/main-page.component';
+import { UsersComponent } from './pages/users/users.component';
 
 
 const appRoutes: Routes = [

@@ -36,8 +36,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageRouterProvider", function() { return PageRouterProvider; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js");
-/* harmony import */ var _pages_users_users_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/users/users.component */ "./src/app/pages/users/users.component.ts");
-/* harmony import */ var _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/MainPage/main-page.component */ "./src/app/pages/MainPage/main-page.component.ts");
+/* harmony import */ var _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/MainPage/main-page.component */ "./src/app/pages/MainPage/main-page.component.ts");
+/* harmony import */ var _pages_users_users_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/users/users.component */ "./src/app/pages/users/users.component.ts");
 
 
 
@@ -45,8 +45,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const appRoutes = [
-    { path: 'ürünler', component: _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_3__["MainPageComponent"] },
-    { path: 'kullanıcılar', component: _pages_users_users_component__WEBPACK_IMPORTED_MODULE_2__["UsersComponent"] },
+    { path: 'ürünler', component: _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_2__["MainPageComponent"] },
+    { path: 'kullanıcılar', component: _pages_users_users_component__WEBPACK_IMPORTED_MODULE_3__["UsersComponent"] },
 ];
 class AppRoutingModule {
 }
@@ -172,19 +172,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/MainPage/main-page.component */ "./src/app/pages/MainPage/main-page.component.ts");
 /* harmony import */ var _pages_menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/menu/menu/menu.component */ "./src/app/pages/menu/menu/menu.component.ts");
-/* harmony import */ var _pages_products_products_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/products/products.component */ "./src/app/pages/products/products.component.ts");
-/* harmony import */ var _pages_users_users_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/users/users.component */ "./src/app/pages/users/users.component.ts");
-/* harmony import */ var _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @progress/kendo-angular-grid */ "./node_modules/@progress/kendo-angular-grid/__ivy_ngcc__/dist/fesm2015/index.js");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/animations.js");
-/* harmony import */ var _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/MainPage/addProduct/add-product/add-product.component */ "./src/app/pages/MainPage/addProduct/add-product/add-product.component.ts");
-/* harmony import */ var _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @progress/kendo-angular-dialog */ "./node_modules/@progress/kendo-angular-dialog/__ivy_ngcc__/dist/fesm2015/index.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @progress/kendo-angular-dateinputs */ "./node_modules/@progress/kendo-angular-dateinputs/__ivy_ngcc__/dist/fesm2015/index.js");
-/* harmony import */ var _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @progress/kendo-angular-inputs */ "./node_modules/@progress/kendo-angular-inputs/__ivy_ngcc__/dist/fesm2015/index.js");
-/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
-/* harmony import */ var _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/login/new-user/new-user.component */ "./src/app/pages/login/new-user/new-user.component.ts");
-/* harmony import */ var _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @progress/kendo-angular-dropdowns */ "./node_modules/@progress/kendo-angular-dropdowns/__ivy_ngcc__/dist/fesm2015/index.js");
-
+/* harmony import */ var _pages_users_users_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/users/users.component */ "./src/app/pages/users/users.component.ts");
+/* harmony import */ var _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @progress/kendo-angular-grid */ "./node_modules/@progress/kendo-angular-grid/__ivy_ngcc__/dist/fesm2015/index.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/animations.js");
+/* harmony import */ var _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/MainPage/addProduct/add-product/add-product.component */ "./src/app/pages/MainPage/addProduct/add-product/add-product.component.ts");
+/* harmony import */ var _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @progress/kendo-angular-dialog */ "./node_modules/@progress/kendo-angular-dialog/__ivy_ngcc__/dist/fesm2015/index.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @progress/kendo-angular-dateinputs */ "./node_modules/@progress/kendo-angular-dateinputs/__ivy_ngcc__/dist/fesm2015/index.js");
+/* harmony import */ var _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @progress/kendo-angular-inputs */ "./node_modules/@progress/kendo-angular-inputs/__ivy_ngcc__/dist/fesm2015/index.js");
+/* harmony import */ var _pages_login_login_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./pages/login/login.component */ "./src/app/pages/login/login.component.ts");
+/* harmony import */ var _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/login/new-user/new-user.component */ "./src/app/pages/login/new-user/new-user.component.ts");
+/* harmony import */ var _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @progress/kendo-angular-dropdowns */ "./node_modules/@progress/kendo-angular-dropdowns/__ivy_ngcc__/dist/fesm2015/index.js");
 
 
 
@@ -211,37 +209,36 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
             _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
             _angular_http__WEBPACK_IMPORTED_MODULE_2__["HttpModule"],
-            _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_9__["GridModule"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
-            _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_12__["DialogsModule"],
+            _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_8__["GridModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+            _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_11__["DialogsModule"],
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"],
-            _angular_forms__WEBPACK_IMPORTED_MODULE_13__["ReactiveFormsModule"],
-            _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_14__["DateInputsModule"],
-            _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_15__["InputsModule"],
-            _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_18__["DropDownsModule"]
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"],
+            _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_13__["DateInputsModule"],
+            _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_14__["InputsModule"],
+            _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_17__["DropDownsModule"]
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
         _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_5__["MainPageComponent"],
         _pages_menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"],
-        _pages_products_products_component__WEBPACK_IMPORTED_MODULE_7__["ProductsComponent"],
-        _pages_users_users_component__WEBPACK_IMPORTED_MODULE_8__["UsersComponent"],
-        _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_11__["AddProductComponent"],
-        _pages_login_login_component__WEBPACK_IMPORTED_MODULE_16__["LoginComponent"],
-        _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_17__["NewUserComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _pages_users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"],
+        _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_10__["AddProductComponent"],
+        _pages_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"],
+        _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_16__["NewUserComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
         _angular_http__WEBPACK_IMPORTED_MODULE_2__["HttpModule"],
-        _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_9__["GridModule"],
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
-        _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_12__["DialogsModule"],
+        _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_8__["GridModule"],
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+        _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_11__["DialogsModule"],
         _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"],
-        _angular_forms__WEBPACK_IMPORTED_MODULE_13__["ReactiveFormsModule"],
-        _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_14__["DateInputsModule"],
-        _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_15__["InputsModule"],
-        _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_18__["DropDownsModule"]] }); })();
+        _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"],
+        _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"],
+        _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_13__["DateInputsModule"],
+        _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_14__["InputsModule"],
+        _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_17__["DropDownsModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
@@ -249,26 +246,25 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
                     _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_5__["MainPageComponent"],
                     _pages_menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"],
-                    _pages_products_products_component__WEBPACK_IMPORTED_MODULE_7__["ProductsComponent"],
-                    _pages_users_users_component__WEBPACK_IMPORTED_MODULE_8__["UsersComponent"],
-                    _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_11__["AddProductComponent"],
-                    _pages_login_login_component__WEBPACK_IMPORTED_MODULE_16__["LoginComponent"],
-                    _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_17__["NewUserComponent"]
+                    _pages_users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"],
+                    _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_10__["AddProductComponent"],
+                    _pages_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"],
+                    _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_16__["NewUserComponent"],
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
                     _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
                     _angular_http__WEBPACK_IMPORTED_MODULE_2__["HttpModule"],
-                    _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_9__["GridModule"],
-                    _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
-                    _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_12__["DialogsModule"],
+                    _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_8__["GridModule"],
+                    _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+                    _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_11__["DialogsModule"],
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                    _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__["BrowserAnimationsModule"],
-                    _angular_forms__WEBPACK_IMPORTED_MODULE_13__["FormsModule"],
-                    _angular_forms__WEBPACK_IMPORTED_MODULE_13__["ReactiveFormsModule"],
-                    _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_14__["DateInputsModule"],
-                    _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_15__["InputsModule"],
-                    _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_18__["DropDownsModule"]
+                    _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"],
+                    _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"],
+                    _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"],
+                    _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_13__["DateInputsModule"],
+                    _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_14__["InputsModule"],
+                    _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_17__["DropDownsModule"]
                 ],
                 providers: [],
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
@@ -299,9 +295,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function AddProductComponent_kendo_dialog_0_Template(rf, ctx) { if (rf & 1) {
-    const _r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    const _r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "kendo-dialog", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("close", function AddProductComponent_kendo_dialog_0_Template_kendo_dialog_close_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11); const ctx_r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r10.closeForm(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("close", function AddProductComponent_kendo_dialog_0_Template_kendo_dialog_close_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r12.closeForm(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "kendo-dialog-titlebar");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Add New Product ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -339,11 +335,11 @@ function AddProductComponent_kendo_dialog_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "div", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 4);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "button", 13);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AddProductComponent_kendo_dialog_0_Template_button_click_24_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11); const ctx_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r12.onSave($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AddProductComponent_kendo_dialog_0_Template_button_click_24_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r14.onSave($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Save");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "button", 14);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AddProductComponent_kendo_dialog_0_Template_button_click_26_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r11); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r13.onCancel($event); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function AddProductComponent_kendo_dialog_0_Template_button_click_26_listener($event) { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r13); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r15.onCancel($event); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Cancel");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -351,15 +347,15 @@ function AddProductComponent_kendo_dialog_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx_r9.editForm);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx_r11.editForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r9.editForm.controls.name.valid || ctx_r9.editForm.controls.name.pristine);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r11.editForm.controls.name.valid || ctx_r11.editForm.controls.name.pristine);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](8);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r9.editForm.controls.category.valid || ctx_r9.editForm.controls.category.pristine);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r11.editForm.controls.category.valid || ctx_r11.editForm.controls.category.pristine);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", !ctx_r9.editForm.valid);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("disabled", !ctx_r11.editForm.valid);
 } }
 class AddProductComponent {
     constructor() {
@@ -473,7 +469,7 @@ class MainPageComponent {
         this.getProduct();
     }
     getProduct() {
-        this.dataService.getProduct(this.dataService.user).subscribe(response => {
+        this.dataService.getProduct().subscribe(response => {
             this.products = response;
         });
     }
@@ -502,7 +498,7 @@ class MainPageComponent {
     }
 }
 MainPageComponent.ɵfac = function MainPageComponent_Factory(t) { return new (t || MainPageComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_http__WEBPACK_IMPORTED_MODULE_3__["Http"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_service_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"])); };
-MainPageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainPageComponent, selectors: [["app-main-page"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([src_app_service_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])], decls: 8, vars: 7, consts: [[3, "kendoGridBinding", "sortable", "filterable", "groupable", "resizable", "add", "edit", "remove"], ["kendoGridToolbarTemplate", ""], ["field", "name", "title", "Name", "width", "65"], ["field", "category", "title", "Caategory", "width", "65"], ["field", "complete", "title", "Status", "width", "65"], ["width", "65", "title", "Options", "media", "sm"], ["kendoGridCellTemplate", ""], [3, "model", "isNew", "save", "cancel"], ["kendoGridAddCommand", "", 1, "ngtof-btn", "ngtof-btn-default"], ["title", "Olustur", 1, "glyphicon", "glyphicon-plus-sign", 3, "ngStyle"], ["kendoGridEditCommand", "", 3, "primary"], ["kendoGridRemoveCommand", ""]], template: function MainPageComponent_Template(rf, ctx) { if (rf & 1) {
+MainPageComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: MainPageComponent, selectors: [["app-main-page"]], features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([src_app_service_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])], decls: 8, vars: 7, consts: [[3, "kendoGridBinding", "sortable", "filterable", "groupable", "resizable", "add", "edit", "remove"], ["kendoGridToolbarTemplate", ""], ["field", "name", "title", "Name", "width", "65"], ["field", "category", "title", "Category", "width", "65"], ["field", "complete", "title", "Status", "width", "65"], ["width", "65", "title", "Options", "media", "sm"], ["kendoGridCellTemplate", ""], [3, "model", "isNew", "save", "cancel"], ["kendoGridAddCommand", "", 1, "ngtof-btn", "ngtof-btn-default"], ["title", "Olustur", 1, "glyphicon", "glyphicon-plus-sign", 3, "ngStyle"], ["kendoGridEditCommand", "", 3, "primary"], ["kendoGridRemoveCommand", ""]], template: function MainPageComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "kendo-grid", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("add", function MainPageComponent_Template_kendo_grid_add_0_listener() { return ctx.addAppParameter(); })("edit", function MainPageComponent_Template_kendo_grid_edit_0_listener($event) { return ctx.editAppParameter($event); })("remove", function MainPageComponent_Template_kendo_grid_remove_0_listener($event) { return ctx.removeAppParameter($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, MainPageComponent_ng_template_1_Template, 3, 2, "ng-template", 1);
@@ -584,8 +580,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
-/* harmony import */ var _Models_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Models/login */ "./src/app/pages/Models/login.ts");
-/* harmony import */ var src_app_service_data_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! src/app/service/data.service */ "./src/app/service/data.service.ts");
+/* harmony import */ var src_app_service_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/service/data.service */ "./src/app/service/data.service.ts");
+/* harmony import */ var _Models_login__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Models/login */ "./src/app/pages/Models/login.ts");
+
 
 
 
@@ -604,17 +601,16 @@ class LoginComponent {
     //public user: User = new User();
     ngOnInit() {
     }
-    giris() {
-        var user = new _Models_login__WEBPACK_IMPORTED_MODULE_2__["User"]();
+    giris(e) {
+        e.preventDefault();
+        var user = new _Models_login__WEBPACK_IMPORTED_MODULE_3__["User"]();
         user.username = this.loginForm.value.username;
         user.password = this.loginForm.value.password;
         this.dataService.loginUser(user).subscribe(response => {
-            if (response.json() != null) {
+            if (response != null) {
                 this.dataService.userControl = true;
                 this.dataService.newUser = false;
-                this.dataService.user = response.json();
-                console.log(this.dataService.user);
-                debugger;
+                src_app_service_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"].user = response;
             }
         });
     }
@@ -622,7 +618,7 @@ class LoginComponent {
         this.dataService.newUser = true;
     }
 }
-LoginComponent.ɵfac = function LoginComponent_Factory(t) { return new (t || LoginComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_service_data_service__WEBPACK_IMPORTED_MODULE_3__["DataService"])); };
+LoginComponent.ɵfac = function LoginComponent_Factory(t) { return new (t || LoginComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_service_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"])); };
 LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: LoginComponent, selectors: [["app-login"]], decls: 25, vars: 4, consts: [[1, "container"], [3, "formGroup"], [1, "row"], ["src", "../../../assets/image/ba.jpg", "width", "500", "height", "333"], [1, "col-sm-12"], [1, "col-sm-2"], ["for", "username", 1, "control-label"], [1, "col-sm-4"], ["id", "username", "type", "text", "formControlName", "username", 1, "form-control"], [1, "k-tooltip", "k-tooltip-validation", 3, "hidden"], ["id", "password", 1, "col-sm-2"], ["for", "password", 1, "control-label"], ["id", "password", "type", "password", "formControlName", "password", 1, "form-control"], ["id", "buttons", 1, "row"], ["type", "button", 1, "btn", "btn-primary", "float-right", 3, "disabled", "click"], ["type", "button", 1, "btn", "btn-light", "float-right", 3, "click"]], template: function LoginComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "form", 1);
@@ -656,7 +652,7 @@ LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "div", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "button", 14);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LoginComponent_Template_button_click_21_listener() { return ctx.giris(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LoginComponent_Template_button_click_21_listener($event) { return ctx.giris($event); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Giri\u015F ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "button", 15);
@@ -684,7 +680,7 @@ LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
                 templateUrl: './login.component.html',
                 styleUrls: ['./login.component.css']
             }]
-    }], function () { return [{ type: src_app_service_data_service__WEBPACK_IMPORTED_MODULE_3__["DataService"] }]; }, null); })();
+    }], function () { return [{ type: src_app_service_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"] }]; }, null); })();
 
 
 /***/ }),
@@ -714,9 +710,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NewUserComponent_kendo_dialog_0_Template(rf, ctx) { if (rf & 1) {
-    const _r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    const _r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "kendo-dialog", 1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("close", function NewUserComponent_kendo_dialog_0_Template_kendo_dialog_close_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r15 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r15.closeForm(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("close", function NewUserComponent_kendo_dialog_0_Template_kendo_dialog_close_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r18); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r17.closeForm(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "kendo-dialog-titlebar");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " Yeni Kullan\u0131c\u0131 Kay\u0131d\u0131 ");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -778,11 +774,11 @@ function NewUserComponent_kendo_dialog_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "div", 18);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](39, "div", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "button", 19);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NewUserComponent_kendo_dialog_0_Template_button_click_40_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r17 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r17.onSave(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NewUserComponent_kendo_dialog_0_Template_button_click_40_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r18); const ctx_r19 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r19.onSave(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, "Kaydet");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](42, "button", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NewUserComponent_kendo_dialog_0_Template_button_click_42_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r16); const ctx_r18 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r18.onCancel(); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function NewUserComponent_kendo_dialog_0_Template_button_click_42_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r18); const ctx_r20 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r20.onCancel(); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](43, "\u0130ptal");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -790,19 +786,19 @@ function NewUserComponent_kendo_dialog_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
-    const ctx_r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    const ctx_r16 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx_r14.newUserForm);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("formGroup", ctx_r16.newUserForm);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r14.newUserForm.get("firstName").valid || ctx_r14.newUserForm.get("firstName").pristine);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r16.newUserForm.get("firstName").valid || ctx_r16.newUserForm.get("firstName").pristine);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r14.newUserForm.get("lastName").valid || ctx_r14.newUserForm.get("lastName").pristine);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r16.newUserForm.get("lastName").valid || ctx_r16.newUserForm.get("lastName").pristine);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r14.newUserForm.get("username").valid || ctx_r14.newUserForm.get("username").pristine);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r16.newUserForm.get("username").valid || ctx_r16.newUserForm.get("username").pristine);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r14.newUserForm.get("password").valid || ctx_r14.newUserForm.get("password").pristine);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("hidden", ctx_r16.newUserForm.get("password").valid || ctx_r16.newUserForm.get("password").pristine);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](6);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx_r14.categoryList);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("data", ctx_r16.categoryList);
 } }
 class NewUserComponent {
     constructor(dataService) {
@@ -924,43 +920,6 @@ MenuComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 
 /***/ }),
 
-/***/ "./src/app/pages/products/products.component.ts":
-/*!******************************************************!*\
-  !*** ./src/app/pages/products/products.component.ts ***!
-  \******************************************************/
-/*! exports provided: ProductsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductsComponent", function() { return ProductsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-
-
-class ProductsComponent {
-    constructor() {
-    }
-    ngOnInit() {
-    }
-}
-ProductsComponent.ɵfac = function ProductsComponent_Factory(t) { return new (t || ProductsComponent)(); };
-ProductsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProductsComponent, selectors: [["app-products"]], decls: 2, vars: 0, template: function ProductsComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "products works!");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3Byb2R1Y3RzL3Byb2R1Y3RzLmNvbXBvbmVudC5jc3MifQ== */"] });
-/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ProductsComponent, [{
-        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
-        args: [{
-                selector: 'app-products',
-                templateUrl: './products.component.html',
-                styleUrls: ['./products.component.css']
-            }]
-    }], function () { return []; }, null); })();
-
-
-/***/ }),
-
 /***/ "./src/app/pages/users/users.component.ts":
 /*!************************************************!*\
   !*** ./src/app/pages/users/users.component.ts ***!
@@ -972,20 +931,45 @@ ProductsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefine
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsersComponent", function() { return UsersComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var src_app_service_data_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/service/data.service */ "./src/app/service/data.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
 
 
+
+
+function UsersComponent_li_2_Template(rf, ctx) { if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+} if (rf & 2) {
+    const user_r7 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", user_r7.name, " ");
+} }
 class UsersComponent {
-    constructor() {
+    constructor(dataService) {
+        this.dataService = dataService;
     }
     ngOnInit() {
+        this.getUser();
+    }
+    getUser() {
+        this.dataService.getUser().subscribe(response => {
+            this.userList = response;
+        });
     }
 }
-UsersComponent.ɵfac = function UsersComponent_Factory(t) { return new (t || UsersComponent)(); };
-UsersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UsersComponent, selectors: [["app-users"]], decls: 2, vars: 0, template: function UsersComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h1");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Kullan\u0131c\u0131lar");
+UsersComponent.ɵfac = function UsersComponent_Factory(t) { return new (t || UsersComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_service_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"])); };
+UsersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: UsersComponent, selectors: [["app-users"]], decls: 3, vars: 1, consts: [[1, "col", "mt-3"], [1, "list-group"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [1, "list-group-item"]], template: function UsersComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "ul", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, UsersComponent_li_2_Template, 2, 1, "li", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3VzZXJzL3VzZXJzLmNvbXBvbmVudC5jc3MifQ== */"] });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", ctx.userList);
+    } }, directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]], styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3VzZXJzL3VzZXJzLmNvbXBvbmVudC5jc3MifQ== */"] });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](UsersComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
@@ -993,7 +977,7 @@ UsersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
                 templateUrl: './users.component.html',
                 styleUrls: ['./users.component.css']
             }]
-    }], function () { return []; }, null); })();
+    }], function () { return [{ type: src_app_service_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"] }]; }, null); })();
 
 
 /***/ }),
@@ -1010,7 +994,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DataService", function() { return DataService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/__ivy_ngcc__/fesm2015/http.js");
+/* harmony import */ var _pages_Models_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pages/Models/login */ "./src/app/pages/Models/login.ts");
+/* harmony import */ var _angular_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/http */ "./node_modules/@angular/http/__ivy_ngcc__/fesm2015/http.js");
+
 
 
 
@@ -1021,8 +1007,12 @@ class DataService {
         this.userControl = false;
         this.newUser = false;
     }
-    getProduct(user) {
-        return this.http.post("api/getProducts", user).
+    getProduct() {
+        return this.http.post("api/getProducts", DataService.user).
+            pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(Response => Response.json()));
+    }
+    getUser() {
+        return this.http.post("api/getUser", DataService.user).
             pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(Response => Response.json()));
     }
     addProduct(product) {
@@ -1032,20 +1022,25 @@ class DataService {
         return this.http.post("api/deleteProduct", product);
     }
     loginUser(user) {
-        return this.http.post("api/loginUser", user);
+        return this.http.post("api/loginUser", user).
+            pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_1__["map"])(Response => Response.json()));
     }
     saveUser(user) {
         return this.http.post("api/saveUser", user);
     }
+    setUser(user) {
+        DataService.user = user;
+    }
 }
-DataService.ɵfac = function DataService_Factory(t) { return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_http__WEBPACK_IMPORTED_MODULE_2__["Http"])); };
+DataService.user = new _pages_Models_login__WEBPACK_IMPORTED_MODULE_2__["User"]();
+DataService.ɵfac = function DataService_Factory(t) { return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_http__WEBPACK_IMPORTED_MODULE_3__["Http"])); };
 DataService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: DataService, factory: DataService.ɵfac, providedIn: 'root' });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](DataService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
                 providedIn: 'root'
             }]
-    }], function () { return [{ type: _angular_http__WEBPACK_IMPORTED_MODULE_2__["Http"] }]; }, null); })();
+    }], function () { return [{ type: _angular_http__WEBPACK_IMPORTED_MODULE_3__["Http"] }]; }, null); })();
 
 
 /***/ }),

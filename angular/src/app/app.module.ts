@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './pages/MainPage/main-page.component';
 import { MenuComponent } from './pages/menu/menu/menu.component';
-import { ProductsComponent } from './pages/products/products.component';
 import { UsersComponent } from './pages/users/users.component';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,17 +17,15 @@ import { LoginComponent } from './pages/login/login.component';
 import { NewUserComponent } from './pages/login/new-user/new-user.component';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 
-
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
     MenuComponent,
-    ProductsComponent,
     UsersComponent,
     AddProductComponent,
     LoginComponent,
-    NewUserComponent
+    NewUserComponent,
   ],
   imports: [
     BrowserModule,

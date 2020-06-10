@@ -7,6 +7,8 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class UserSeviceImpl implements UserService {
 
@@ -30,5 +32,11 @@ public class UserSeviceImpl implements UserService {
 	@Override
 	public void addUser(User user) {
 		userRepository.save(user);
+	}
+
+	@Override
+	public List<User> getUser(String category) {
+		userRepository.findByCategory(category);
+		return null;
 	}
 }

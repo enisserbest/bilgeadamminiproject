@@ -20,11 +20,15 @@ export class DataService {
   }
 
   public getProduct() {
-    console.log(DataService.user);
-
-    return this.http.post("api/getProducts", DataService.user).
+      return this.http.post("api/getProducts", DataService.user).
       pipe(map(Response => Response.json()));
   }
+
+  
+  public getUser() {
+    return this.http.post("api/getUser", DataService.user).
+    pipe(map(Response => Response.json()));
+}
 
   public addProduct(product: Product) {
     return this.http.post("api/addProduct", product);

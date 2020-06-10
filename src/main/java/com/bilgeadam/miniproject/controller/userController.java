@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/api")
@@ -30,4 +32,10 @@ public class userController {
         userSevice.addUser(user);
     }
 
+
+    @RequestMapping("/getUser")
+    @PostMapping
+    public List<User> getUser(@RequestBody User user) {
+        return userSevice.getUser(user.getCategory());
+    }
 }
