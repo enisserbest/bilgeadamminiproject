@@ -22,7 +22,7 @@ export class DataService {
   public getProduct() {
     console.log(this.user);
 
-    return this.http.post("api/getProducts", null).
+    return this.http.post("api/getProducts", this.user).
       pipe(map(Response => Response.json()));
   }
 
