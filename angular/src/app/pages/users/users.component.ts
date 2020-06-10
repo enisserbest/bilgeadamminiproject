@@ -9,6 +9,7 @@ import { User } from '../Models/login';
 })
 export class UsersComponent implements OnInit {
 
+  public filterText:string
   constructor(private dataService: DataService) { }
   userList: User[];
   ngOnInit(): void {
@@ -17,6 +18,7 @@ export class UsersComponent implements OnInit {
 
   public getUser() {
     this.dataService.getUser().subscribe(response => {
+      debugger
       this.userList = response;
     })
   }

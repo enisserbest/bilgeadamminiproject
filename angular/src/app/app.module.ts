@@ -16,6 +16,7 @@ import { InputsModule } from '@progress/kendo-angular-inputs';
 import { LoginComponent } from './pages/login/login.component';
 import { NewUserComponent } from './pages/login/new-user/new-user.component';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
+import { UserFilterPipe } from './pages/users/FilterPipe/user-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
     AddProductComponent,
     LoginComponent,
     NewUserComponent,
+    UserFilterPipe,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 package com.bilgeadam.miniproject.controller;
 
 import com.bilgeadam.miniproject.controller.model.Product;
+import com.bilgeadam.miniproject.entity.ProductEntity;
 import com.bilgeadam.miniproject.entity.User;
 import com.bilgeadam.miniproject.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;

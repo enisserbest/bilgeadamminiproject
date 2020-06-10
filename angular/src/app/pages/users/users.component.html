@@ -1,7 +1,16 @@
+<div class="col">
+    <input class="form-control" type="text" placeholder="bir şeyler yaz" [(ngModel)]="filterText">
+</div>
+<div class="col" *ngIf=filterText>
+    <b>{{filterText}}</b> için arama yaptınız.
+</div>
+
 <div class="col mt-3">
     <ul class="list-group">
-        <li class="list-group-item" *ngFor="let user of userList">
-            {{user.name}}
+        <li class="list-group-item" *ngFor="let user of userList | userFilter:filterText">
+            {{user.firstName}}
+            {{user.lastName}}
+            {{user.category}}
         </li>
     </ul>
 </div>

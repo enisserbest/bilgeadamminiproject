@@ -11,7 +11,7 @@ export class DataService {
 
   public userControl: boolean;
   public newUser: boolean;
-  public static user: User = new User();
+  public static user: User;
 
   constructor(private http: Http) {
     this.userControl = false;

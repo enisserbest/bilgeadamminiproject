@@ -25,7 +25,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getProducts(String category) {
-        List<ProductEntity> list = productRepository.findAll();
+        List<ProductEntity> list = productRepository.findByCategoryAndStatus(category,1);
         Type type = new TypeToken<List<Product>>() {
         }.getType();
         return modelMapper.map(list, type);
@@ -33,7 +33,7 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product addProduct(Product product) {
-        product.setStasus(1);
+        product.setStatus(1);
         return modelMapper.map(productRepository.save(modelMapper.map(product, ProductEntity.class)), Product.class);
     }
 

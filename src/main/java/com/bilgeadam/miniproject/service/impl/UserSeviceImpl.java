@@ -12,31 +12,29 @@ import java.util.List;
 @Component
 public class UserSeviceImpl implements UserService {
 
-	@Autowired
-	UserRepository userRepository;
+    @Autowired
+    UserRepository userRepository;
 
-	@Autowired
-	private ModelMapper modelMapper;
+    @Autowired
+    private ModelMapper modelMapper;
 
-	@Override
-	public User loginUser(User user) {
-		User userControl = userRepository.getByUsernameAndPassword(user.getUsername(), user.getPassword());
-		if (userControl != null) {
-			return userControl;
-		} else {
-			return null;
-		}
+    @Override
+    public User loginUser(User user) {
+        User userControl = userRepository.getByUsernameAndPassword(user.getUsername(), user.getPassword());
+        if (userControl != null) {
+            return userControl;
+        } else {
+            return null;
+        }
+    }
 
-	}
+    @Override
+    public void addUser(User user) {
+        userRepository.save(user);
+    }
 
-	@Override
-	public void addUser(User user) {
-		userRepository.save(user);
-	}
-
-	@Override
-	public List<User> getUser(String category) {
-		userRepository.findByCategory(category);
-		return null;
-	}
+    @Override
+    public List<User> getUser(String category) {
+        return userRepository.findByCategory(category);
+    }
 }
