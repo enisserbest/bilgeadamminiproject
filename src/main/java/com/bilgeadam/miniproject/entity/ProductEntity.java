@@ -18,8 +18,6 @@ public class ProductEntity implements Serializable {
 	private String name;
 	private String category;
 	private boolean complete;
-
-
 	private Integer status;
 
 	public Integer getId() {

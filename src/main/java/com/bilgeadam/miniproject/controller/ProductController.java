@@ -1,12 +1,13 @@
 package com.bilgeadam.miniproject.controller;
 
 import com.bilgeadam.miniproject.controller.model.Product;
+import com.bilgeadam.miniproject.entity.User;
 import com.bilgeadam.miniproject.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+    
 @RestController
 @RequestMapping("/api")
 public class ProductController {
@@ -16,9 +17,9 @@ public class ProductController {
 
 
     @RequestMapping("/getProducts")
-    @GetMapping
-    public List<Product> getProducts() {
-        return productService.getProducts();
+    @PostMapping
+    public List<Product> getProducts(@RequestBody User user) {
+        return productService.getProducts(user.getCategory());
     }
 
     @RequestMapping("/addProduct")

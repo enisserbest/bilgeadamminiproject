@@ -23,17 +23,17 @@ export class LoginComponent implements OnInit {
 
   }
 
-  public giris(){
+  public giris(e){
+    e.preventDefault()
     var user= new User();
     user.username = this.loginForm.value.username;
     user.password = this.loginForm.value.password;
     this.dataService.loginUser(user).subscribe(response => {     
-      if(response.json()!=null){
+      if(response!=null){
         this.dataService.userControl=true;
         this.dataService.newUser=false;
-        this.dataService.user = response.json();
-        console.log(this.dataService.user);
-        
+        this.dataService.user = response
+              
       }
       
     })

@@ -22,7 +22,7 @@ export class MainPageComponent implements OnInit {
   public removedDataItem: Product;
   public openedDialog = false;
 
-  ngOnInit() {
+  ngOnInit() {  
     this.getProduct();
   }
 

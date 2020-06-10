@@ -17,7 +17,10 @@ public class User implements Serializable {
     private String password;
     private String firstName;
     private String lastName;
-    private String Category;
+
+
+
+    private String category;
 
     public Integer getId() {
         return id;
@@ -58,12 +61,12 @@ public class User implements Serializable {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
     public String getCategory() {
-        return Category;
+        return category;
     }
 
     public void setCategory(String category) {
-        Category = category;
+        this.category = category;
     }
+
 }

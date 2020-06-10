@@ -24,8 +24,8 @@ public class ProductServiceImpl implements ProductService {
     private ModelMapper modelMapper;
 
     @Override
-    public List<Product> getProducts() {
-        List<ProductEntity> list = productRepository.findAll().stream().filter(p -> p.getStatus() == 1).collect(Collectors.toList());
+    public List<Product> getProducts(String category) {
+        List<ProductEntity> list = productRepository.findByCategoryAndStatus(category,1);
         Type type = new TypeToken<List<Product>>() {
         }.getType();
         return modelMapper.map(list, type);

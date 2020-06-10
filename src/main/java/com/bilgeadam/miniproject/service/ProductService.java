@@ -7,7 +7,7 @@ import com.bilgeadam.miniproject.controller.model.Product;
 @Service
 public interface ProductService {
 
-	List<Product> getProducts();
+	List<Product> getProducts(String category);
 
 	Product addProduct(Product product);
 

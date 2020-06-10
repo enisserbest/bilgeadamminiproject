@@ -1,3 +1,4 @@
+<!-- Main Page-->
 <div *ngIf="active" class="col">
     <div class="row">
         <div class="col-3">
@@ -10,16 +11,12 @@
     </div>
 </div>
 
+<!-- Login Sayfası-->
 <div *ngIf="loginActive" class="col-12" class="col">
-
     <app-login></app-login>
-
 </div>
 
-
+<!-- Yeni kullanıcı Kayıt pop up açılması durumu-->
 <div *ngIf="newUserActive" class="col-12" class="col">
-
     <app-new-user></app-new-user>
-
 </div>
-

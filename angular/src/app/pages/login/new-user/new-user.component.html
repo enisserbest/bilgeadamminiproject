@@ -7,23 +7,23 @@
         <div class="col-sm-12">
 
             <div class="col-sm-5">
-                <label for="name" class="control-label">Ad :</label>
+                <label for="firstName" class="control-label">Ad :</label>
             </div>
             <div class="col-sm-10">
-                <input id="name" type="text" class="form-control" formControlName="name" />
+                <input id="firstName" type="text" class="form-control" formControlName="firstName" />
                 <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="newUserForm.get('name').valid || newUserForm.get('name').pristine">
+                    [hidden]="newUserForm.get('firstName').valid || newUserForm.get('firstName').pristine">
                     Ad Giriniz!
                 </span>
             </div>
 
             <div class="col-sm-5">
-                <label for="surname" class="control-label">Soyad :</label>
+                <label for="lastName" class="control-label">Soyad :</label>
             </div>
             <div class="col-sm-10">
-                <input id="surname" type="text" class="form-control" formControlName="surname" />
+                <input id="lastName" type="text" class="form-control" formControlName="lastName" />
                 <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="newUserForm.get('surname').valid || newUserForm.get('surname').pristine">
+                    [hidden]="newUserForm.get('lastName').valid || newUserForm.get('lastName').pristine">
                     Soyad Giriniz!
                 </span>
             </div>
@@ -55,19 +55,12 @@
             <label for="category" class="control-label">Kategori</label>
         </div>
         <div class="col-sm-10">
-            <select id="category" class="form-control" formControlName="category">
-                <option value="">Teknoloji</option>
-                <option value="">Bilim</option>
-                <option value="">Tarih</option>
-                <option value="">Sanat</option>
-                <option value="">Felsefe</option>
-            </select>
+            <kendo-dropdownlist formControlName="category" [data]="categoryList" required></kendo-dropdownlist>
         </div>
 
         <div class="row">
             <div class="col-sm-12">
-                <button type="button" class="float-right btn btn-outline-success"
-                    (click)="onSave()">Kaydet</button>
+                <button type="button" class="float-right btn btn-outline-success" (click)="onSave()">Kaydet</button>
                 <button class="float-right btn btn-outline-danger" (click)="onCancel()">İptal</button>
 
             </div>

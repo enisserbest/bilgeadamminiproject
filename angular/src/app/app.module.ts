@@ -16,6 +16,7 @@ import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { LoginComponent } from './pages/login/login.component';
 import { NewUserComponent } from './pages/login/new-user/new-user.component';
+import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { NewUserComponent } from './pages/login/new-user/new-user.component';
     FormsModule,
     ReactiveFormsModule,
     DateInputsModule,
-    InputsModule
+    InputsModule,
+    DropDownsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

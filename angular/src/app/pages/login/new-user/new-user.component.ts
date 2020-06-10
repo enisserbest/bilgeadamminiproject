@@ -12,12 +12,14 @@ export class NewUserComponent implements OnInit {
 
   public newUserActive = false;
   public newUserForm: FormGroup = new FormGroup({
-    'name': new FormControl('', Validators.required),
-    'surname': new FormControl('', Validators.required),
+    'firstName': new FormControl('', Validators.required),
+    'lastName': new FormControl('', Validators.required),
     'username': new FormControl('', Validators.required),
     'password': new FormControl('', Validators.required),
     'category': new FormControl('', Validators.required),
   });
+  public categoryList: Array<string>  = ["Teknoloji","Bilim","Tarih","Sanat","Felsefe"];
+
 
   constructor(private dataService: DataService) {
     setInterval(() => {
@@ -33,8 +35,9 @@ export class NewUserComponent implements OnInit {
   public onSave(){
     this.dataService.saveUser(this.newUserForm.value).subscribe(response =>{
       console.log("user kaydı başarılı");
-      
     })
+    this.dataService.newUser = false
+    this.newUserActive=false;
   }
 
   public onCancel(){
