@@ -11,7 +11,7 @@ export class DataService {
 
   public userControl: boolean;
   public newUser: boolean;
-  public user: User = new User();
+  public static user: User = new User();
 
   constructor(private http: Http) {
     this.userControl = false;
@@ -20,9 +20,9 @@ export class DataService {
   }
 
   public getProduct() {
-    console.log(this.user);
+    console.log(DataService.user);
 
-    return this.http.post("api/getProducts", this.user).
+    return this.http.post("api/getProducts", DataService.user).
       pipe(map(Response => Response.json()));
   }
 
@@ -43,7 +43,7 @@ export class DataService {
     return this.http.post("api/saveUser", user);
   }
   public setUser(user: User) {
-    this.user = user;
+    DataService.user = user;
   }
 }
 

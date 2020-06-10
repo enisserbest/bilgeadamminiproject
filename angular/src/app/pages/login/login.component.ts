@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
       if(response!=null){
         this.dataService.userControl=true;
         this.dataService.newUser=false;
-        this.dataService.user = response
+        DataService.user= response
               
       }
       
