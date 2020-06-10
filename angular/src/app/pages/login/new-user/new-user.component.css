@@ -1,0 +1,13 @@
+.k-dialog-titlebar {
+    border-color: inherit;
+    color: #fff;
+    background-color: slategray;
+}
+
+button.float-right.btn.btn-outline-danger {
+    margin-right: 12px;
+}
+
+div#category {
+    margin-left: 17px;
+}

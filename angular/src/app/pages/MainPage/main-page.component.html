@@ -1,17 +1,42 @@
-<kendo-grid [kendoGridBinding]="products" (add)="addAppParameter()" (edit)="editAppParameter($event)"
-  (remove)="removeAppParameter($event)" [filterable]="true"  [sortable]="true" [groupable]="true" [resizable]="true">
+<kendo-grid 
+[kendoGridBinding]="products" 
+(add)="addAppParameter()" 
+(edit)="editAppParameter($event)"
+(remove)="removeAppParameter($event)" 
+[filterable]="true" 
+[sortable]="true" 
+[groupable]="true" 
+[resizable]="true">
 
-  <ng-template kendoGridToolbarTemplate>
-    <button class="ngtof-btn ngtof-btn-default" kendoGridAddCommand>
-      <span title="Olustur" class="glyphicon glyphicon-plus-sign" [ngStyle]="{'top': '0px', 'padding': '0 3px'}">
-      </span>
-      Yeni
+<ng-template kendoGridToolbarTemplate>
+  <button class="ngtof-btn ngtof-btn-default" kendoGridAddCommand>
+    <span title="Olustur" class="glyphicon glyphicon-plus-sign" [ngStyle]="{'top': '0px', 'padding': '0 3px'}">
+    </span>
+     Yeni
     </button>
-  </ng-template>
-  <kendo-grid-column field="name" title="Name" width="65" [filterable]="false"></kendo-grid-column>
-  <kendo-grid-column field="category" title="Category" width="65"></kendo-grid-column>
-  <kendo-grid-column field="complete" title="Status" width="65"></kendo-grid-column>
-  <kendo-grid-command-column width="65" title="Options" media="sm ">
+</ng-template>
+
+<kendo-grid-column 
+  field="name" 
+  title="Name" 
+  width="65" 
+  [filterable]="false">
+</kendo-grid-column>
+  
+<kendo-grid-column 
+  field="category" 
+  title="Category" 
+  width="65">
+</kendo-grid-column>
+
+<kendo-grid-column 
+  field="complete" 
+  title="Status" 
+  width="65">
+</kendo-grid-column>
+  
+<kendo-grid-command-column 
+ width="65" title="Options" media="sm ">
     <ng-template kendoGridCellTemplate>
       <button kendoGridEditCommand [primary]="true">Edit</button>
       <button kendoGridRemoveCommand>Delete</button>
@@ -19,7 +44,5 @@
   </kendo-grid-command-column>
 </kendo-grid>
 
-
-<app-add-product [model]="editDataItem" [isNew]="isNew" (save)="saveAppParameter($event)"
-  (cancel)="cancel()">
+<app-add-product [model]="editDataItem" [isNew]="isNew" (save)="saveAppParameter($event)" (cancel)="cancel()">
 </app-add-product>

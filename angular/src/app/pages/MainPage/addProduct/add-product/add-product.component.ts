@@ -13,8 +13,11 @@ export class AddProductComponent implements OnInit {
     'id': new FormControl(''),
     'name': new FormControl('', Validators.required),
     'category': new FormControl('', Validators.required),
-
   });
+
+  public categoryList: Array<string> = ["Teknoloji", "Bilim", "Tarih", "Sanat", "Felsefe"];
+
+  get f() { return this.editForm.controls; }
 
   @Input() public isNew = false;
 

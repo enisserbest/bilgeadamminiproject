@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
 
   clickValue(data: any) {
     console.log(data);
-    if (data === "ürünler") {
+    if (data.target.innerText === "ürünler") {
       (<any>this.router).navigate(['/ürünler']);
     }
     else {

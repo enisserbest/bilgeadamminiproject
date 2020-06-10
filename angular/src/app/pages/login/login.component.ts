@@ -17,6 +17,8 @@ export class LoginComponent implements OnInit {
 
   public isNew:boolean = false;
 
+  get f() { return this.loginForm.controls; }
+
   constructor(private dataService:DataService) { }
   //public user: User = new User();
   ngOnInit(): void {

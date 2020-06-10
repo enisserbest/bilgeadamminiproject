@@ -18,34 +18,34 @@ export class NewUserComponent implements OnInit {
     'password': new FormControl('', Validators.required),
     'category': new FormControl('', Validators.required),
   });
-  public categoryList: Array<string>  = ["Teknoloji","Bilim","Tarih","Sanat","Felsefe"];
+  public categoryList: Array<string> = ["Teknoloji", "Bilim", "Tarih", "Sanat", "Felsefe"];
 
+  get f() { return this.newUserForm.controls; }
 
   constructor(private dataService: DataService) {
     setInterval(() => {
       this.newUserActive = this.dataService.newUser;
-      
-    }, 500);
-   }
 
+    }, 500);
+  }
 
   ngOnInit(): void {
   }
 
-  public onSave(){
-    this.dataService.saveUser(this.newUserForm.value).subscribe(response =>{
+  public onSave() {
+    this.dataService.saveUser(this.newUserForm.value).subscribe(response => {
       console.log("user kaydı başarılı");
     })
     this.dataService.newUser = false
-    this.newUserActive=false;
+    this.newUserActive = false;
   }
 
-  public onCancel(){
-    this.dataService.newUser =false;
+  public onCancel() {
+    this.dataService.newUser = false;
   }
 
-  public closeForm(){
-    this.dataService.newUser =false;
+  public closeForm() {
+    this.dataService.newUser = false;
 
   }
 }

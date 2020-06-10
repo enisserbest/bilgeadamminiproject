@@ -1,6 +1,6 @@
 <h4 class="page-header">Kategoriler</h4>
 <ul class="list-group">
-  <li (click)="clickValue($event.target.innerText)" *ngFor="let category of menuItems" class="list-group-item">
+  <li (click)="clickValue($event)" *ngFor="let category of menuItems" class="list-group-item">
     {{category}}
   </li>
 </ul>

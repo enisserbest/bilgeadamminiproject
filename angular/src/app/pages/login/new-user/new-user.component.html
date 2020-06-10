@@ -1,69 +1,69 @@
-<kendo-dialog *ngIf="newUserActive" (close)="closeForm()">
-    <kendo-dialog-titlebar>
-        Yeni Kullanıcı Kayıdı
-    </kendo-dialog-titlebar>
-
-    <form [formGroup]="newUserForm">
-        <div class="col-sm-12">
-
-            <div class="col-sm-5">
-                <label for="firstName" class="control-label">Ad :</label>
-            </div>
-            <div class="col-sm-10">
-                <input id="firstName" type="text" class="form-control" formControlName="firstName" />
-                <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="newUserForm.get('firstName').valid || newUserForm.get('firstName').pristine">
-                    Ad Giriniz!
-                </span>
-            </div>
-
-            <div class="col-sm-5">
-                <label for="lastName" class="control-label">Soyad :</label>
-            </div>
-            <div class="col-sm-10">
-                <input id="lastName" type="text" class="form-control" formControlName="lastName" />
-                <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="newUserForm.get('lastName').valid || newUserForm.get('lastName').pristine">
-                    Soyad Giriniz!
-                </span>
-            </div>
-
-            <div class="col-sm-7">
-                <label for="username" class="control-label">Kullanıcı Adı:</label>
-            </div>
-            <div class="col-sm-10">
-                <input id="username" type="text" class="form-control" formControlName="username" />
-                <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="newUserForm.get('username').valid || newUserForm.get('username').pristine">
-                    Kullanıcı Adı Giriniz!
-                </span>
-            </div>
-
-            <div class="col-sm-5">
-                <label for="password" class="control-label">Şifre</label>
-            </div>
-            <div class="col-sm-10">
-                <input id="password" type="password" class="form-control" formControlName="password" />
-                <span class="k-tooltip k-tooltip-validation"
-                    [hidden]="newUserForm.get('password').valid || newUserForm.get('password').pristine">
-                    Şifre giriniz!
-                </span>
-            </div>
-        </div>
-
-        <div class="col-sm-5">
-            <label for="category" class="control-label">Kategori</label>
-        </div>
-        <div class="col-sm-10">
-            <kendo-dropdownlist formControlName="category" [data]="categoryList" required></kendo-dropdownlist>
-        </div>
-
-        <div class="row">
+<div class="container">
+    <kendo-dialog *ngIf="newUserActive" (close)="closeForm()" [width]="650" [height]="450">
+        <kendo-dialog-titlebar>
+            Yeni Kullanıcı Kayıdı
+        </kendo-dialog-titlebar>
+        <form [formGroup]="newUserForm">
             <div class="col-sm-12">
-                <button type="button" class="float-right btn btn-outline-success" (click)="onSave()">Kaydet</button>
-                <button class="float-right btn btn-outline-danger" (click)="onCancel()">İptal</button>
+                <div class="col-sm-5">
+                    <label for="firstName" class="control-label">Ad : </label>
+                </div>
+                <div class="col-sm-10">
+                    <input id="firstName" type="text" class="form-control" formControlName="firstName"
+                        [ngClass]="{ 'is-invalid': f.firstName.errors }" />
+                    <div *ngIf="f.firstName.errors" class="invalid-feedback">
+                        <div *ngIf="f.firstName.invalid && f.firstName.dirty">Adınızı giriniz</div>
+                    </div>
+                </div>
 
+                <div class="col-sm-5">
+                    <label for="lastName" class="control-label">Soyad : </label>
+                </div>
+                <div class="col-sm-10">
+                    <input id="lastName" type="text" class="form-control" formControlName="lastName"
+                        [ngClass]="{ 'is-invalid': f.lastName.errors }" />
+                    <div *ngIf="f.lastName.errors" class="invalid-feedback">
+                        <div *ngIf="f.lastName.invalid && f.lastName.dirty">Soyadınızı giriniz</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-7">
+                    <label for="username" class="control-label">Kullanıcı Adı : </label>
+                </div>
+                <div class="col-sm-10">
+                    <input id="username" type="text" class="form-control" formControlName="username"
+                        [ngClass]="{ 'is-invalid': f.username.errors }" />
+                    <div *ngIf="f.username.errors" class="invalid-feedback">
+                        <div *ngIf="f.username.invalid && f.username.dirty">Kullanıcı Adı Giriniz</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <label for="password" class="control-label">Şifre : </label>
+                </div>
+                <div class="col-sm-10">
+                    <input id="password" type="password" class="form-control" formControlName="password"
+                        [ngClass]="{ 'is-invalid': f.password.errors }" />
+                    <div *ngIf="f.password.errors" class="invalid-feedback">
+                        <div *ngIf="f.password.invalid && f.password.dirty">Şifre giriniz</div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </form>
-</kendo-dialog>
+
+            <div class="col-sm-5" id="category">
+                <label id="category" for="category" class="control-label">Kategori : </label>
+            </div>
+            <div class="col-sm-10" id="category">
+                <kendo-dropdownlist formControlName="category" [data]="categoryList" required></kendo-dropdownlist>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary float-right" (click)="onSave()" [disabled]="!newUserForm.valid">Kaydet</button>
+                    <button class="float-right btn btn-outline-danger" (click)="onCancel()">İptal</button>
+
+                </div>
+            </div>
+        </form>
+    </kendo-dialog>
+</div>
