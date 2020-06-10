@@ -453,9 +453,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _pages_users_Filter_Pipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
-    /*! ./pages/users/Filter Pipe/user-filter.pipe */
-    "./src/app/pages/users/Filter Pipe/user-filter.pipe.ts");
+    var _pages_users_FilterPipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! ./pages/users/FilterPipe/user-filter.pipe */
+    "./src/app/pages/users/FilterPipe/user-filter.pipe.ts");
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
@@ -475,7 +475,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_5__["MainPageComponent"], _pages_menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"], _pages_users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"], _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_10__["AddProductComponent"], _pages_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"], _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_16__["NewUserComponent"], _pages_users_Filter_Pipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["UserFilterPipe"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_5__["MainPageComponent"], _pages_menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"], _pages_users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"], _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_10__["AddProductComponent"], _pages_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"], _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_16__["NewUserComponent"], _pages_users_FilterPipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["UserFilterPipe"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_http__WEBPACK_IMPORTED_MODULE_2__["HttpModule"], _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_8__["GridModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"], _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_11__["DialogsModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"], _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_13__["DateInputsModule"], _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_14__["InputsModule"], _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_17__["DropDownsModule"]]
       });
     })();
@@ -486,7 +486,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_5__["MainPageComponent"], _pages_menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"], _pages_users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"], _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_10__["AddProductComponent"], _pages_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"], _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_16__["NewUserComponent"], _pages_users_Filter_Pipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["UserFilterPipe"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _pages_MainPage_main_page_component__WEBPACK_IMPORTED_MODULE_5__["MainPageComponent"], _pages_menu_menu_menu_component__WEBPACK_IMPORTED_MODULE_6__["MenuComponent"], _pages_users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"], _pages_MainPage_addProduct_add_product_add_product_component__WEBPACK_IMPORTED_MODULE_10__["AddProductComponent"], _pages_login_login_component__WEBPACK_IMPORTED_MODULE_15__["LoginComponent"], _pages_login_new_user_new_user_component__WEBPACK_IMPORTED_MODULE_16__["NewUserComponent"], _pages_users_FilterPipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_18__["UserFilterPipe"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_http__WEBPACK_IMPORTED_MODULE_2__["HttpModule"], _progress_kendo_angular_grid__WEBPACK_IMPORTED_MODULE_8__["GridModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"], _progress_kendo_angular_dialog__WEBPACK_IMPORTED_MODULE_11__["DialogsModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__["BrowserAnimationsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_12__["ReactiveFormsModule"], _progress_kendo_angular_dateinputs__WEBPACK_IMPORTED_MODULE_13__["DateInputsModule"], _progress_kendo_angular_inputs__WEBPACK_IMPORTED_MODULE_14__["InputsModule"], _progress_kendo_angular_dropdowns__WEBPACK_IMPORTED_MODULE_17__["DropDownsModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
@@ -980,8 +980,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-main-page"]],
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([src_app_service_data_service__WEBPACK_IMPORTED_MODULE_1__["DataService"]])],
       decls: 8,
-      vars: 7,
-      consts: [[3, "kendoGridBinding", "sortable", "filterable", "groupable", "resizable", "add", "edit", "remove"], ["kendoGridToolbarTemplate", ""], ["field", "name", "title", "Name", "width", "65"], ["field", "category", "title", "Category", "width", "65"], ["field", "complete", "title", "Status", "width", "65"], ["width", "65", "title", "Options", "media", "sm"], ["kendoGridCellTemplate", ""], [3, "model", "isNew", "save", "cancel"], ["kendoGridAddCommand", "", 1, "ngtof-btn", "ngtof-btn-default"], ["title", "Olustur", 1, "glyphicon", "glyphicon-plus-sign", 3, "ngStyle"], ["kendoGridEditCommand", "", 3, "primary"], ["kendoGridRemoveCommand", ""]],
+      vars: 8,
+      consts: [[3, "kendoGridBinding", "filterable", "sortable", "groupable", "resizable", "add", "edit", "remove"], ["kendoGridToolbarTemplate", ""], ["field", "name", "title", "Name", "width", "65", 3, "filterable"], ["field", "category", "title", "Category", "width", "65"], ["field", "complete", "title", "Status", "width", "65"], ["width", "65", "title", "Options", "media", "sm "], ["kendoGridCellTemplate", ""], [3, "model", "isNew", "save", "cancel"], ["kendoGridAddCommand", "", 1, "ngtof-btn", "ngtof-btn-default"], ["title", "Olustur", 1, "glyphicon", "glyphicon-plus-sign", 3, "ngStyle"], ["kendoGridEditCommand", "", 3, "primary"], ["kendoGridRemoveCommand", ""]],
       template: function MainPageComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "kendo-grid", 0);
@@ -1022,9 +1022,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("kendoGridBinding", ctx.products)("sortable", true)("filterable", false)("groupable", false)("resizable", true);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("kendoGridBinding", ctx.products)("filterable", true)("sortable", true)("groupable", true)("resizable", true);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](7);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("filterable", false);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](5);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("model", ctx.editDataItem)("isNew", ctx.isNew);
         }
@@ -1848,10 +1852,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
-  "./src/app/pages/users/Filter Pipe/user-filter.pipe.ts":
-  /*!*************************************************************!*\
-    !*** ./src/app/pages/users/Filter Pipe/user-filter.pipe.ts ***!
-    \*************************************************************/
+  "./src/app/pages/users/FilterPipe/user-filter.pipe.ts":
+  /*!************************************************************!*\
+    !*** ./src/app/pages/users/FilterPipe/user-filter.pipe.ts ***!
+    \************************************************************/
 
   /*! exports provided: UserFilterPipe */
 
@@ -1962,11 +1966,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _Filter_Pipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./Filter Pipe/user-filter.pipe */
-    "./src/app/pages/users/Filter Pipe/user-filter.pipe.ts");
+    var _FilterPipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./FilterPipe/user-filter.pipe */
+    "./src/app/pages/users/FilterPipe/user-filter.pipe.ts");
 
-    function UsersComponent_div_3_Template(rf, ctx) {
+    function UsersComponent_div_2_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
@@ -1976,7 +1980,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " i\xE7in arama yapt\u0131n\u0131z. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " i\xE7in arama yapt\u0131n\u0131z.\n");
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1990,7 +1994,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
     }
 
-    function UsersComponent_li_6_Template(rf, ctx) {
+    function UsersComponent_li_5_Template(rf, ctx) {
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li", 6);
 
@@ -2004,7 +2008,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", user_r8.name, " ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate3"](" ", user_r8.firstName, " ", user_r8.lastName, " ", user_r8.category, " ");
       }
     }
 
@@ -2028,6 +2032,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this7 = this;
 
           this.dataService.getUser().subscribe(function (response) {
+            debugger;
             _this7.userList = response;
           });
         }
@@ -2043,9 +2048,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     UsersComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: UsersComponent,
       selectors: [["app-users"]],
-      decls: 8,
+      decls: 7,
       vars: 6,
-      consts: [[1, "col"], ["type", "text", "placeholder", "type something...", 1, "form-control", 3, "ngModel", "ngModelChange"], ["class", "col", 4, "ngIf"], [1, "col", "mt-3"], [1, "list-group"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [1, "list-group-item"]],
+      consts: [[1, "col"], ["type", "text", "placeholder", "bir \u015Feyler yaz", 1, "form-control", 3, "ngModel", "ngModelChange"], ["class", "col", 4, "ngIf"], [1, "col", "mt-3"], [1, "list-group"], ["class", "list-group-item", 4, "ngFor", "ngForOf"], [1, "list-group-item"]],
       template: function UsersComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -2060,17 +2065,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, " // Ad\u0131m 2 ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, UsersComponent_div_2_Template, 4, 1, "div", 2);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](3, UsersComponent_div_3_Template, 4, 1, "div", 2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "ul", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, UsersComponent_li_5_Template, 2, 3, "li", 5);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, UsersComponent_li_6_Template, 2, 1, "li", 5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](7, "userFilter");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](6, "userFilter");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -2082,17 +2085,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngModel", ctx.filterText);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx.filterText);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](7, 3, ctx.userList, ctx.filterText));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind2"](6, 3, ctx.userList, ctx.filterText));
         }
       },
       directives: [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["DefaultValueAccessor"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgControlStatus"], _angular_forms__WEBPACK_IMPORTED_MODULE_2__["NgModel"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"]],
-      pipes: [_Filter_Pipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_4__["UserFilterPipe"]],
+      pipes: [_FilterPipe_user_filter_pipe__WEBPACK_IMPORTED_MODULE_4__["UserFilterPipe"]],
       styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3VzZXJzL3VzZXJzLmNvbXBvbmVudC5jc3MifQ== */"]
     });
     /*@__PURE__*/
@@ -2149,13 +2152,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _pages_Models_login__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ../pages/Models/login */
-    "./src/app/pages/Models/login.ts");
-    /* harmony import */
-
-
-    var _angular_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _angular_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/http */
     "./node_modules/@angular/http/__ivy_ngcc__/fesm2015/http.js");
 
@@ -2216,10 +2213,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return DataService;
     }();
 
-    DataService.user = new _pages_Models_login__WEBPACK_IMPORTED_MODULE_2__["User"]();
-
     DataService.ɵfac = function DataService_Factory(t) {
-      return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_http__WEBPACK_IMPORTED_MODULE_3__["Http"]));
+      return new (t || DataService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_http__WEBPACK_IMPORTED_MODULE_2__["Http"]));
     };
 
     DataService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -2237,7 +2232,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: _angular_http__WEBPACK_IMPORTED_MODULE_3__["Http"]
+          type: _angular_http__WEBPACK_IMPORTED_MODULE_2__["Http"]
         }];
       }, null);
     })();
