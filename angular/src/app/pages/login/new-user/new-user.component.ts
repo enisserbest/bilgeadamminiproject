@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { User } from '../../Models/login';
 import { DataService } from 'src/app/service/data.service';
+import { AlertService } from '../../alert/alert.service';
 
 @Component({
   selector: 'app-new-user',
@@ -9,7 +10,7 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./new-user.component.css']
 })
 export class NewUserComponent implements OnInit {
-
+  options = { autoClose: true, keepAfterRouteChange: true };
   public newUserActive = false;
   public newUserForm: FormGroup = new FormGroup({
     'firstName': new FormControl('', Validators.required),
@@ -22,10 +23,9 @@ export class NewUserComponent implements OnInit {
 
   get f() { return this.newUserForm.controls; }
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private alertService: AlertService) {
     setInterval(() => {
       this.newUserActive = this.dataService.newUser;
-
     }, 500);
   }
 
@@ -34,7 +34,7 @@ export class NewUserComponent implements OnInit {
 
   public onSave() {
     this.dataService.saveUser(this.newUserForm.value).subscribe(response => {
-      console.log("user kaydı başarılı");
+      this.alertService.success("Başarıyla Kaydedildi", this.options);
     })
     this.dataService.newUser = false
     this.newUserActive = false;

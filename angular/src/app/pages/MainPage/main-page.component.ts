@@ -4,6 +4,7 @@ import { DataService } from 'src/app/service/data.service';
 import { Product } from '../Models/products';
 import { Observable } from 'rxjs';
 import { GridDataResult } from '@progress/kendo-angular-grid';
+import { AlertService } from '../alert/alert.service';
 
 @Component({
   selector: 'app-main-page',
@@ -13,10 +14,9 @@ import { GridDataResult } from '@progress/kendo-angular-grid';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor(private http: Http, private dataService: DataService) { }
-
+  constructor(private http: Http, private dataService: DataService, private alertService: AlertService) { }
+  options = { autoClose: true, keepAfterRouteChange: true };
   public view: Observable<GridDataResult>;
-
   public appParameters: Product[];
   public editDataItem: Product;
   public isNew: boolean;
@@ -53,15 +53,13 @@ export class MainPageComponent implements OnInit {
 
   public saveAppParameter(data: any) {
     this.dataService.addProduct(data).subscribe(data => {
-      console.log("save başarılı");
       this.getProduct();
-
     })
   }
 
   public removeAppParameter(data: any) {
     this.dataService.deleteProduct(data.dataItem).subscribe(data => {
-      console.log("silme işlemi başarılı");
+      this.alertService.success("Silme İşlemi Başarılı", this.options);
       this.getProduct();
     })
   }
@@ -69,11 +67,11 @@ export class MainPageComponent implements OnInit {
   public onDblClick(data: any) {
     this.dataService.completeProduct(this.products[data.path[1].rowIndex]).subscribe(response => {
       if (response) {
-        console.log("işlem başarılı")
+        this.alertService.success("Başarıyla Kaydedildi", this.options);
         this.getProduct();
       }
       else {
-        console.log("işlem başarısız")
+        this.alertService.error("İşlem Başarısız", this.options);
       }
     })
 

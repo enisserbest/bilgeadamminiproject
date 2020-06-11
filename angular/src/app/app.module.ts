@@ -17,6 +17,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { NewUserComponent } from './pages/login/new-user/new-user.component';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { UserFilterPipe } from './pages/users/FilterPipe/user-filter.pipe';
+import { MultiAlertsComponent } from './pages/multi-alerts/multi-alerts.component';
+import { AlertComponent } from './pages/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { UserFilterPipe } from './pages/users/FilterPipe/user-filter.pipe';
     LoginComponent,
     NewUserComponent,
     UserFilterPipe,
+    AlertComponent,
+    MultiAlertsComponent,
   ],
   imports: [
     BrowserModule,

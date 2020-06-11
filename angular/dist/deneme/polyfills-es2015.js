@@ -3248,7 +3248,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\burak.acar\Desktop\New folder\bilgeadamminiproject\angular\src\polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! C:\Users\enis.serbest\Desktop\miniproject\angular\src\polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })
