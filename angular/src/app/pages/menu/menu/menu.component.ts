@@ -11,11 +11,18 @@ export class MenuComponent implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
 
   menuItems: string[] = ["Ürünler", "Kullanıcılar"];
+  selectedIndex: number = null;
 
   ngOnInit(): void {
   }
 
+  public setIndex(index: number) {
+    debugger
+    this.selectedIndex = index;
+  }
+
   clickValue(data: any) {
+    debugger
     console.log(data);
     if (data.target.innerText === "Ürünler") {
       (<any>this.router).navigate(['/ürünler']);
