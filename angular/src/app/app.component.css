@@ -2,3 +2,15 @@
     margin-top: 2%;
     margin-left: 0%;
 }
+
+a.navbar-brand {
+    margin-left: -47px;
+}
+
+img {
+    margin-top: 13px;
+}
+
+.container-fluid {
+    margin-left: -38px;
+}

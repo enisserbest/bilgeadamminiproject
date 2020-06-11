@@ -10,14 +10,14 @@ export class MenuComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private router: Router) { }
 
-  menuItems: string[] = ["ürünler", "kullanıcılar"];
+  menuItems: string[] = ["Ürünler", "Kullanıcılar"];
 
   ngOnInit(): void {
   }
 
   clickValue(data: any) {
     console.log(data);
-    if (data.target.innerText === "ürünler") {
+    if (data.target.innerText === "Ürünler") {
       (<any>this.router).navigate(['/ürünler']);
     }
     else {
