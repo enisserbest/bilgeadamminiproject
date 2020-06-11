@@ -6,7 +6,8 @@
 [filterable]="true" 
 [sortable]="true" 
 [groupable]="true" 
-[resizable]="true">
+[resizable]="true"
+(dblclick)="onDblClick($event)">
 
 <ng-template kendoGridToolbarTemplate>
   <button class="ngtof-btn ngtof-btn-default" kendoGridAddCommand>

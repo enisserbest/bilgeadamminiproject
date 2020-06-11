@@ -15,6 +15,6 @@ public interface ProductService {
 
 	List<Product> getProducts(boolean complete);
 
-	void changeProductStatus(Integer id);
+	Boolean changeProductStatus(Integer id);
 
 }

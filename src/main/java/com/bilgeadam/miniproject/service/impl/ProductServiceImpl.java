@@ -53,9 +53,17 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public void changeProductStatus(Integer id) {
+    public Boolean changeProductStatus(Integer id) {
         ProductEntity productEntity = productRepository.getById(id);
-        productRepository.save(productEntity);
+        if(productEntity.getComplete()){
+            return false;
+        }
+        else{
+            productEntity.setComplete(true);
+            productRepository.save(productEntity);
+            return true;
+        }
+
 
     }
 

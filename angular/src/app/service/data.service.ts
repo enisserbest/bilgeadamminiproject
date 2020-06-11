@@ -16,19 +16,22 @@ export class DataService {
   constructor(private http: Http) {
     this.userControl = false;
     this.newUser = false;
-    
+
+  }
+
+  public setUser(user: User) {
+    DataService.user = user;
   }
 
   public getProduct() {
-      return this.http.post("api/getProducts", DataService.user).
+    return this.http.post("api/getProducts", DataService.user).
       pipe(map(Response => Response.json()));
   }
 
-  
   public getUser() {
     return this.http.post("api/getUser", DataService.user).
-    pipe(map(Response => Response.json()));
-}
+      pipe(map(Response => Response.json()));
+  }
 
   public addProduct(product: Product) {
     return this.http.post("api/addProduct", product);
@@ -46,9 +49,12 @@ export class DataService {
   public saveUser(user: User) {
     return this.http.post("api/saveUser", user);
   }
-  public setUser(user: User) {
-    DataService.user = user;
+
+  public completeProduct(product: Product) {
+    return this.http.post("api/completeProduct", product).
+      pipe(map(Response => Response.json()));
   }
+
 }
 
 

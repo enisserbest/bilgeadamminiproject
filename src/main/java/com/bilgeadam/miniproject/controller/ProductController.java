@@ -35,10 +35,12 @@ public class ProductController {
         productService.deleteProduct(product.getId());
     }
 
-    @RequestMapping("/changeProductStatus")
+    @RequestMapping("/completeProduct")
     @PostMapping
-    public void changeProductStatus(@RequestBody Integer id) {
-        productService.changeProductStatus(id);
+    public Boolean completeProduct(@RequestBody Product product) {
+        return productService.changeProductStatus(product.getId());
     }
+
+
 
 }

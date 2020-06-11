@@ -44,7 +44,7 @@ public class ProductEntity implements Serializable {
 		this.category = category;
 	}
 
-	public boolean isComplete() {
+	public boolean getComplete() {
 		return complete;
 	}
 

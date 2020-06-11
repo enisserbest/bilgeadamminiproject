@@ -4,6 +4,7 @@ import { DataService } from 'src/app/service/data.service';
 import { Product } from '../Models/products';
 import { Observable } from 'rxjs';
 import { GridDataResult } from '@progress/kendo-angular-grid';
+
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
@@ -22,7 +23,7 @@ export class MainPageComponent implements OnInit {
   public removedDataItem: Product;
   public openedDialog = false;
 
-  ngOnInit() {  
+  ngOnInit() {
     this.getProduct();
   }
 
@@ -64,6 +65,20 @@ export class MainPageComponent implements OnInit {
       this.getProduct();
     })
   }
+
+  public onDblClick(data: any) {
+    this.dataService.completeProduct(this.products[data.path[1].rowIndex]).subscribe(response => {
+      if (response) {
+        console.log("işlem başarılı")
+        this.getProduct();
+      }
+      else {
+        console.log("işlem başarısız")
+      }
+    })
+
+  }
+
 }
 
 
