@@ -10,6 +10,7 @@ import { User } from '../Models/login';
 export class UsersComponent implements OnInit {
 
   public filterText:string
+  
   constructor(private dataService: DataService) { }
   userList: User[];
   ngOnInit(): void {

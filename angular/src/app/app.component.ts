@@ -12,7 +12,6 @@ export class AppComponent {
   public loginActive:boolean = true;
   public newUserActive: boolean =false;
   constructor(private dataService: DataService) { 
-
     setInterval(() => {
       this.active = this.dataService.userControl;
       this.newUserActive = this.dataService.newUser;

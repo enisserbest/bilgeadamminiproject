@@ -16,6 +16,7 @@ export class MainPageComponent implements OnInit {
 
   constructor(private http: Http, private dataService: DataService, private alertService: AlertService) { }
   options = { autoClose: true, keepAfterRouteChange: true };
+  //observeble bir service üzerinde istek attığımızda bunu izlememize olanak sağlayan/ subsicribe yapmadan data akışını sağlamamıza izin vermeyen bir yapı sağlıyor.
   public view: Observable<GridDataResult>;
   public appParameters: Product[];
   public editDataItem: Product;
@@ -26,14 +27,13 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
     this.getProduct();
   }
-
   products: Product[];
-
-
   getProduct() {
     this.dataService.getProduct().subscribe(response => {
       this.products = response
-    })
+    }, error => {
+      this.alertService.error("Bir hata ile karşılaşıldı", this.options);
+    });
   }
   public addAppParameter() {
     this.editDataItem = new Product();
@@ -48,8 +48,6 @@ export class MainPageComponent implements OnInit {
   public cancel() {
     this.editDataItem = undefined;
   }
-  public dialogFn: Function;
-
 
   public saveAppParameter(data: any) {
     this.dataService.addProduct(data).subscribe(data => {
@@ -74,7 +72,6 @@ export class MainPageComponent implements OnInit {
         this.alertService.error("İşlem Başarısız", this.options);
       }
     })
-
   }
 
 }

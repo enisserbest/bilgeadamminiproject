@@ -31,7 +31,7 @@ import { AlertComponent } from './pages/alert/alert.component';
     NewUserComponent,
     UserFilterPipe,
     AlertComponent,
-    MultiAlertsComponent,
+    MultiAlertsComponent
   ],
   imports: [
     BrowserModule,

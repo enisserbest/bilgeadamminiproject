@@ -5,7 +5,6 @@ export class User {
         this.firstName = ""
         this.category =""
      }
-
     id: number;
     username: string;
     password: string;

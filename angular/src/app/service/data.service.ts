@@ -19,11 +19,9 @@ export class DataService {
 
   }
 
-  public setUser(user: User) {
-    DataService.user = user;
-  }
-
-  public getProduct() {
+  // Map : Gelen response datayı bizim istediğimiz bir nesneye map etmesi için kullanılır.
+  //pipe yazmadan kullanılması durumunda catch yerine catchError kullanmamızı ve import etmek istediğimiz konumu değiştiriyor
+  public getProduct():Observable<any> {
     return this.http.post("api/getProducts", DataService.user).
       pipe(map(Response => Response.json()));
   }

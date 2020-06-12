@@ -17,12 +17,10 @@ export class MenuComponent implements OnInit {
   }
 
   public setIndex(index: number) {
-    debugger
     this.selectedIndex = index;
   }
 
   clickValue(data: any) {
-    debugger
     console.log(data);
     if (data.target.innerText === "Ürünler") {
       (<any>this.router).navigate(['/ürünler']);

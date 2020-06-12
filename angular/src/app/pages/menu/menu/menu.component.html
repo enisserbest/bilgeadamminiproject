@@ -1,7 +1,7 @@
 <h4 class="page-header">Kategoriler</h4>
 <ul class="list-group">
-  <li (click)="clickValue($event)" (click)="setIndex(i)" *ngFor="let category of menuItems; let i = index" class="list-group-item"
-    [class.active]="selectedIndex === i">
+  <li (click)="clickValue($event)" (click)="setIndex(i)" *ngFor="let category of menuItems; let i = index"
+    class="list-group-item" [class.active]="selectedIndex === i">
     {{category}}
   </li>
 </ul>
